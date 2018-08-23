@@ -4,7 +4,7 @@
   box-sizing: border-box;
   animation-timing-function: cubic-bezier(0, 0, 0, 0.7);
   animation-fill-mode: forwards;
-  transition: all 0.065s;
+  transition: all 0.8s;
 }
 
 .valign {
@@ -32,15 +32,20 @@ body {
 } */
 
 a,
-.fab {
+.fab,
+.fabexp {
   text-decoration: none;
   color: #28385e;
 }
 
-a:hover{
-  color: #b7b7b7;
+.menuitem {
+  /* color: #b7b7b7; */
   border-bottom: 2px dashed #e4c796;
   cursor: pointer;
+}
+
+.menuitem:hover {
+  transform: scale(1.2) !important;
 }
 
 h1,
@@ -55,10 +60,10 @@ h1 {
   display: inline;
 }
 h2 {
-  font-size: 50px;
+  font-size: 48px;
   line-height: 130%;
   animation-duration: 3s;
-  margin-top: -40px;
+  /* margin-top: -40px; */
 }
 h3 {
   font-size: 25px;
@@ -68,7 +73,7 @@ h3 {
 h4 {
   font-size: 22px;
   /* margin: 10px 0; */
-  margin: 1ch auto
+  margin: 1ch auto;
 }
 p {
   line-height: 150%;
@@ -76,7 +81,7 @@ p {
 }
 
 .fab {
-  margin-top: 8vh;
+  margin-top: 2.5vh;
   padding-right: 15px;
 }
 
@@ -107,16 +112,6 @@ p {
   position: relative;
 }
 
-/* #main-home{
-  background-image: url("./images/background.jpg");
-  width: 100vw;
-  height: 100vh;
-  z-index: 199;
-  object-fit: fill !important;
-  opacity: .7;
-
-} */
-
 #main-home,
 #main-work,
 #main-contact {
@@ -127,10 +122,11 @@ p {
 }
 
 .main-image {
-  width: 500px;
+  width: 480px;
   position: absolute;
   right: 0;
-  top: calc(50vh - 357px);
+  top: calc(50vh - 285px);
+  /* above was at 310 */
   z-index: -100;
   opacity: 0.85;
   animation-name: main-image;
@@ -147,23 +143,14 @@ p {
   height: 634px;
   display: table-cell;
   vertical-align: middle;
-  width: 100%;
 }
-
-#main_content > .center {
-  padding: 10vh;
-}
-
-/* #social{
-  margin-top: 30vh;
-
-} */
 
 #header {
   top: 0;
-  position: absolute;
+  position: fixed;
+  /* above used to be absolute */
   width: 1134px;
-  padding: 10px 0;
+  padding: 17vh 0;
 }
 
 #header #social {
@@ -171,11 +158,6 @@ p {
   right: 0;
   left: auto;
   top: 12px;
-}
-
-#header #social svg {
-  padding-right: 0;
-  padding-left: 50px;
 }
 
 #header #social img {
@@ -193,6 +175,9 @@ p {
   margin-left: 20px;
 }
 
+.h2 {
+  text-shadow: -1px 1px 0.9px rgba(119, 118, 118, 0.842);
+}
 
 .hideme {
   display: none;
@@ -226,15 +211,94 @@ p {
   width: 300px;
 }
 
+.languages {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.fabexp {
+  margin-top: 2vh;
+  padding: 0 8px;
+  transition-timing-function: ease-in;
+  transition-duration: 0.2s;
+  transform: rotate(0deg);
+}
+
+.fabexp:hover {
+  color: #dd9b2ae3;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 1000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 1000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  transition-timing-function: ease-out;
+  /* transform: rotate(180deg) scale(1.2);
+   transition-duration: .3s;
+  
+   
+  /* transform: scale(1.2); */
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Contact */
 
-.main-touch
-{
-  background-image: linear-gradient(90deg, #f6d365 0%, #fda085 100%) !important
+.main-touch {
+  background-image: linear-gradient(90deg, #f6d365 0%, #fda085 100%) !important;
 }
-.touch {
+
+.touchline {
+  padding-bottom: 1vh;
+}
+
+.touch,
+.touchline {
   vertical-align: middle;
-  
 }
 
 .contact-info > h4 {
@@ -255,25 +319,6 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 #ffe3b0 !important;
 }
 
-/* input{
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 4px;
-  padding: 10px 15px;
-  margin-top: 30px;
-  box-sizing: border-box;
-  height: 40px;
-  background-color: rgba(174, 0, 255, 0.445);
-  border: 0;
-  color: #1b1e2b;
-  width: 340px;
-  outline: none;
-} 
-::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: 600;
-}*/
-
 .button,
 .btn {
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
@@ -291,8 +336,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 .button:hover,
 .btn:hover {
-  background-image: linear-gradient(200deg, #f6d365 0%, #fda085 100%);
-  transform: translateY(1px);
+  background-image: linear-gradient(200deg, #f6d365 0%, #fda085 105%);
+  transform: translateY(1px) 1.5s;
   font-size: 0.9vw;
 }
 .button:active,
@@ -322,6 +367,21 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 /* Media Queries */
+
+@media screen and (max-width: 665px) {
+  #social {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  
+  }
+
+  .fab{
+    margin-top:3vh
+  }
+}
+
+
 @media screen and (max-width: 1180px) {
   #main-home {
     height: 900px;
@@ -337,14 +397,19 @@ textarea.materialize-textarea:focus:not([readonly]) {
   #menu {
     /* display: none; */
     position: fixed;
-
     margin: 0 auto;
     text-align: center;
+    top: 2vh;
   }
 
   .hideme {
     display: inline;
   }
+
+  .hideme2 {
+    display: none;
+  }
+
   #main-work {
     text-align: center;
     padding-top: 10vh;
@@ -365,24 +430,22 @@ textarea.materialize-textarea:focus:not([readonly]) {
     width: 400px;
     position: static;
   }
+
   .h2 {
     text-align: center;
     font-size: 30px;
-    margin-top: 100px;
-
+    /* margin-top: 100px; */
     font-weight: 400;
   }
+
   h3 {
     font-size: 30px;
     font-weight: 400;
     text-align: center;
   }
+
   h4 {
     font-size: 22px;
-  }
-
-  .languages.social {
-    text-align: center;
   }
 
   .touch,
@@ -392,14 +455,17 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
   .contact-form,
   .touch {
-    margin-top: 6vh;
+    margin-top: 2vh;
   }
+
+  
+.fab{
+  margin-top: 2vh;
+}
 
   .btn {
     font-size: 1.5vw;
-
     line-height: 3vh;
-
     font-weight: 700;
     margin-left: 25%;
   }

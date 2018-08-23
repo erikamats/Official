@@ -10,8 +10,7 @@ class Contact extends React.Component {
         <Menu />
 
         <div id="main_content">
-          <Row > 
-            <Col l={1} />
+          <Row>
             <Col m={12} l={5}>
               <div className="touch">
                 <h2>Get in Touch!</h2>
@@ -19,50 +18,57 @@ class Contact extends React.Component {
               </div>
 
               <div className="contact-info">
-                <h4> erika matsumoto</h4>
+                <h3> Erika Matsumoto</h3>
                 <p> Austin, Texas </p>
-              
+
                 <span>(512) 813-0589</span>
+
+                <div id="social fade fade_ani">
+                <div
+                  className="fab github"
+                  onClick={() => window.open("https://github.com/erikamats ")}
+                >
+                  <FaGithubSquare className="exp github " />
+                </div>
+
+                <div
+                  className="fab instagram"
+                  onClick={() => window.open("https://instagram./erikamats ")}
+                >
+                  <FaInstagram className="exp instagram " />
+                </div>
+
+                <div
+                  className="fab linkedIn"
+                  onClick={() =>
+                    window.open("https://www.linkedin.com/in/erikamatsumoto/")
+                  }
+                >
+                  <FaLinkedinIn className="linkedIn exp" />
+                </div>
+              </div>
               </div>
 
-              <div id="social fade fade_ani" className="left">
-        <div
-          className="fab github"
-          onClick={() => window.open("https://github.com/erikamats ")}
-        >
-          <FaGithubSquare className="exp github " />
-        </div>
-
-        <div
-          className="fab instagram"
-          onClick={() => window.open("https://instagram./erikamats ")}
-        >
-          <FaInstagram className="exp instagram " />
-        </div>
-
-        <div
-          className="fab linkedIn"
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/erikamatsumoto/")
-          }
-        >
-          <FaLinkedinIn className="linkedIn exp" />
-        </div>
-      </div>
+              
             </Col>
 
-            <Col  />
-
-            <Col className="contact-form" m={12} l={5}>
+            <Col className="contact-form" m={12} l={7} s={12}>
               <form
                 action="https://formspree.io/erikacodes@gmail.com"
                 method="POST"
               >
-                <Input l={6}  m={12} label="First Name" name="first-name" validate>
+                <Input
+                  l={6}
+                  m={12}
+                  s={12}
+                  label="First Name"
+                  name="first-name"
+                  validate
+                >
                   <Icon>streetview</Icon>
                 </Input>
 
-                <Input l={6}  m={12} label="Last Name" name="last-name" validate>
+                <Input l={6} m={12}  s={12} label="Last Name" name="last-name" validate>
                   <Icon>streetview</Icon>
                 </Input>
 
@@ -71,12 +77,12 @@ class Contact extends React.Component {
                   name="email"
                   icon="contact_mail"
                   label="Your Email"
-                  s={6}
+                  s={12}
                   validate
                 />
 
                 <Input
-                  s={6}
+                  s={12}
                   label="Telephone"
                   name="phoneNumber"
                   validate
@@ -98,8 +104,7 @@ class Contact extends React.Component {
                   <Col s={3} />
                   <Col s={6}>
                     <Button type="submit" value="Send" className="form-btn">
-                    
-                      Send  an Email!
+                      Send an Email!
                     </Button>
                   </Col>
                   <Col s={3} />

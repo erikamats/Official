@@ -53,24 +53,24 @@ class Work extends React.Component {
 
           <Row>
             <h3>Experience:</h3>
-            <div className="languages social">
-              <div className="fab html">
+            <div className="languages">
+              <div className="fabexp ">
                 <FaHtml5 className="html5 exp" />
               </div>
 
-              <div className="fab html">
+              <div className="fabexp ">
                 <FaJsSquare className="javasxcript exp" />
               </div>
 
-              <div className="fab html">
+              <div className="fabexp ">
                 <FaCss3 className="javasxcript exp" />
               </div>
 
-              <div className="fab html">
+              <div className="fabexp ">
                 <FaNodeJs className="javasxcript exp" />
               </div>
 
-              <div className="fab html">
+              <div className="fabexp ">
                 <FaReact className="javasxcript exp" />
               </div>
 

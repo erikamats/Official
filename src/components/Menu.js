@@ -1,6 +1,5 @@
 import React from "react";
 
-
 class Menu extends React.Component {
   state = {
     clicked: false
@@ -15,17 +14,22 @@ class Menu extends React.Component {
 
   render() {
     return (
-      <div id="header" className="fade fade_ani">
-        {/* <div className="h1"> <Link to="/"><h1>Erika Matsumoto</h1></Link> */}
-
+      <div id="header" className="fade fade_ani social">
+ 
         <a href="/">
-          <h1 className="h1">Erika Matsumoto</h1>
+          <h1 className="h1 hideme2">Erika Matsumoto</h1>
         </a>
 
         <div id="menu">
-          <a href="/" className="hideme">Home</a>
-          <a href="/work">Work</a>
-          <a href="/contact">Contact</a>
+          <a href="/" className="hideme menuitem">
+            Home
+          </a>
+          <a className="menuitem" href="/work">
+            Work
+          </a>
+          <a className="menuitem" href="/contact">
+            Contact
+          </a>
         </div>
       </div>
     );
