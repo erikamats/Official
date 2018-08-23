@@ -3,6 +3,8 @@ import { Row, Input, Icon, Col, Button } from "react-materialize";
 import Menu from "../components/Menu";
 import { FaGithubSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
+import { MdStreetview } from "react-icons/md";
+
 class Contact extends React.Component {
   render() {
     return (
@@ -65,7 +67,7 @@ class Contact extends React.Component {
                   name="first-name"
                   validate
                 >
-                  <Icon>streetview</Icon>
+                 <MdStreetview/>
                 </Input>
 
                 <Input l={6} m={12}  s={12} label="Last Name" name="last-name" validate>
