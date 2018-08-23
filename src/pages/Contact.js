@@ -1,9 +1,9 @@
 import React from "react";
-import { Row, Input, Icon, Col, Button } from "react-materialize";
+import { Row, Input,  Col, Button } from "react-materialize";
 import Menu from "../components/Menu";
 import { FaGithubSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-import { MdStreetview } from "react-icons/md";
+import { MdStreetview, MdContactMail, MdPhoneInTalk, MdModeComment} from "react-icons/md";
 
 class Contact extends React.Component {
   render() {
@@ -71,17 +71,18 @@ class Contact extends React.Component {
                 </Input>
 
                 <Input l={6} m={12}  s={12} label="Last Name" name="last-name" validate>
-                  <Icon>streetview</Icon>
+                <MdStreetview/>
                 </Input>
 
                 <Input
                   type="email"
                   name="email"
-                  icon="contact_mail"
-                  label="Your Email"
+                 label="Your Email"
                   s={12}
                   validate
-                />
+                >
+                <MdContactMail/>
+                </Input>
 
                 <Input
                   s={12}
@@ -90,7 +91,7 @@ class Contact extends React.Component {
                   validate
                   type="tel"
                 >
-                  <Icon>phone_in_talk</Icon>
+                  <MdPhoneInTalk/>
                 </Input>
 
                 <Input
@@ -99,7 +100,7 @@ class Contact extends React.Component {
                   name="message"
                   label="Shoot me a message!"
                 >
-                  <Icon>mode_edit</Icon>
+                  <MdModeComment/>
                 </Input>
 
                 <Row>
