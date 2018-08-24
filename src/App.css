@@ -67,6 +67,7 @@ h2 {
   margin-top: -4vh;
   margin-bottom: 5vh;
 }
+
 h3 {
   font-size: 25px;
   font-weight: 600;
@@ -77,6 +78,7 @@ h4 {
   /* margin: 10px 0; */
   margin: 1ch auto;
 }
+
 p {
   line-height: 150%;
   margin: 0;
@@ -148,11 +150,11 @@ p {
 }
 
 #header {
-  top: 0;
+  top: 10vw;
   position: fixed;
   /* above used to be absolute */
   width: 1134px;
-  padding: 17vh 0;
+ 
 }
 
 #header #social {
@@ -168,9 +170,9 @@ p {
 
 #menu {
   display: inline;
-  margin-left: 20px;
   position: relative;
-  top: -3px;
+  top: -27px;
+  left: 22vw;
 }
 
 #menu a {
@@ -194,7 +196,6 @@ p {
   max-height: 300px !important;
   margin-left: 1.5vw;
   margin: 1.5vw auto;
-  
 
   transition-timing-function: ease-in-out;
   transition-duration: 1.2s;
@@ -393,14 +394,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
   .hideme2 {
     display: none;
-    
   }
 
-  #menu{
-    top: 2vh
+  #menu {
+    top: 2vh;
   }
-
- 
 }
 
 @media screen and (max-width: 662px) {
@@ -416,7 +414,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
     padding: 0;
   }
 
-  .h1{
+  .h1 {
     display: none;
     left: 0;
     top: -15vh;
@@ -427,28 +425,28 @@ textarea.materialize-textarea:focus:not([readonly]) {
     margin-top: 3vh;
   }
 
-  #menu{
-    left: -3vw
+  #menu {
+    left: -3vw;
   }
 }
 
 @media screen and (max-width: 860px) {
-  .hideme2{
+  .h1 {
+    font-size: 30px;
+    top: -10vh;
+    left: 5vw;
+    padding-right: 6vw
+  }
+  
+  .hideme2 {
     position: relative;
     left: 5vw;
   }
 
-  #menu{
+  #menu {
     margin: 0 auto;
     top: -15vh;
-    align-content: center;
-
-  }
-
-  .h1 {
-    font-size: 30px;
-    top: -10vh;
-    left: 5vw
+   left: 20vw
   }
 
 
@@ -467,7 +465,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   }
 
   .hideme {
-    display: inline;
+    display: none;
   }
 
   #main-work {
@@ -479,21 +477,22 @@ textarea.materialize-textarea:focus:not([readonly]) {
   #header {
     width: 100%;
     text-align: center;
-  
+    bottom: 75vh;
+    
   }
 
-  .hideme2{
+  .hideme2 {
     position: relative;
     left: -15vw;
   }
 
-  #menu{
+  #menu {
     margin: 0 auto;
     top: -15vh;
     align-content: center;
     /* left: -3.5vh */
-    right: -7vw;
-  
+    right: -18vw;
+    ;
   }
 
   .h1 {
