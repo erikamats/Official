@@ -62,9 +62,10 @@ h1 {
 }
 h2 {
   font-size: 48px;
-  line-height: 130%;
+  /* line-height: 130%; */
   animation-duration: 3s;
-  /* margin-top: -40px; */
+  margin-top: -4vh;
+  margin-bottom: 5vh;
 }
 h3 {
   font-size: 25px;
@@ -123,7 +124,7 @@ p {
 }
 
 .main-image {
-  width: 480px;
+  width: 450px;
   position: absolute;
   right: 0;
   top: calc(50vh - 285px);
@@ -158,11 +159,11 @@ p {
   opacity: 0;
   right: 0;
   left: auto;
-  top: 12px;
 }
 
-#header #social img {
-  width: 30px;
+#social {
+  vertical-align: middle;
+  padding-top: 17vh 0;
 }
 
 #menu {
@@ -173,7 +174,7 @@ p {
 }
 
 #menu a {
-  margin-left: 20px;
+  margin-left: 2vw;
 }
 
 .h2 {
@@ -188,20 +189,27 @@ p {
 
 .card {
   box-shadow: 0 2px 6px rgb(54, 54, 54) !important;
-  opacity: 0.8;
+  opacity: 0.5;
   width: 300px;
   max-height: 300px !important;
   margin-left: 1.5vw;
-  margin: 2vw auto;
+  margin: 1.5vw auto;
+  
+
+  transition-timing-function: ease-in-out;
+  transition-duration: 1.2s;
+  transform: scale(1);
 }
 
 .card:hover {
-  transform: scale(1.2);
   cursor: pointer;
   z-index: 500;
   opacity: 1;
   box-shadow: -15px 10px 50px #4932057e !important;
-  transition: transform 0.7s;
+
+  transition-timing-function: cubic-bezier(0, 0.01, 0.24, 1.29);
+  transition-duration: 2s;
+  transform: scale(1.2);
 }
 .card-image {
   width: 300px;
@@ -214,13 +222,12 @@ p {
 
 .languages {
   display: flex;
-  align-content: center;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .fabexp {
   margin-top: 2vh;
-  padding: 0 8px;
+  padding-right: 1.5vw;
   transition-timing-function: ease-in;
   transition-duration: 0.2s;
   transform: rotate(0deg);
@@ -306,6 +313,10 @@ p {
   color: #28385e;
 }
 
+.input-field svg {
+  color: #1e366d;
+}
+
 /* label focus color */
 .input-field input:focus + label,
 .input-field .prefix.active,
@@ -374,27 +385,74 @@ textarea.materialize-textarea:focus:not([readonly]) {
     width: 100%;
     margin: 0;
     padding: 0;
-  
   }
 
-  .fab{
-    margin-top:3vh
+  .fab {
+    margin-top: 3vh;
   }
+
+  .hideme2 {
+    display: none;
+    
+  }
+
+  #menu{
+    top: 2vh
+  }
+
+ 
 }
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 662px) {
+  .touch,
+  .contact-info {
+    text-align: center;
+    /* vertical-align: middle */
+  }
+
   #social {
     width: 100%;
     margin: 0;
     padding: 0;
-  
   }
 
-  .fab{
-    margin-top:3vh
+  .h1{
+    display: none;
+    left: 0;
+    top: -15vh;
+    position: relative;
+  }
+
+  .fab {
+    margin-top: 3vh;
+  }
+
+  #menu{
+    left: -3vw
   }
 }
 
+@media screen and (max-width: 860px) {
+  .hideme2{
+    position: relative;
+    left: 5vw;
+  }
+
+  #menu{
+    margin: 0 auto;
+    top: -15vh;
+    align-content: center;
+
+  }
+
+  .h1 {
+    font-size: 30px;
+    top: -10vh;
+    left: 5vw
+  }
+
+
+}
 
 @media screen and (max-width: 1180px) {
   #main-home {
@@ -408,20 +466,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
     height: auto;
   }
 
-  #menu {
-    /* display: none; */
-    position: fixed;
-    margin: 0 auto;
-    text-align: center;
-    top: 2vh;
-  }
-
   .hideme {
     display: inline;
-  }
-
-  .hideme2 {
-    display: none;
   }
 
   #main-work {
@@ -429,33 +475,60 @@ textarea.materialize-textarea:focus:not([readonly]) {
     padding-top: 10vh;
     margin: 0 auto;
   }
+
   #header {
     width: 100%;
     text-align: center;
+  
   }
+
+  .hideme2{
+    position: relative;
+    left: -15vw;
+  }
+
+  #menu{
+    margin: 0 auto;
+    top: -15vh;
+    align-content: center;
+    /* left: -3.5vh */
+    right: -7vw;
+  
+  }
+
   .h1 {
     font-size: 44px;
-    /* display: none */
+    top: -11vh;
   }
 
   .main-image {
     right: auto;
-    margin: 0 auto 60px;
+    margin: 0 auto 1vh;
     width: 400px;
     position: static;
   }
 
+  h2 {
+    margin: 3vh auto;
+  }
   .h2 {
     text-align: center;
     font-size: 30px;
-    /* margin-top: 100px; */
+
     font-weight: 400;
   }
 
-  h3 {
-    font-size: 30px;
-    font-weight: 400;
+  .h3 {
+    font-size: 35px;
+    font-weight: 600;
     text-align: center;
+    margin-top: 10vh;
+  }
+
+  .languages {
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
 
   h4 {
@@ -465,6 +538,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   .touch,
   .contact-info {
     text-align: center;
+    /* vertical-align: middle */
   }
 
   .contact-form,
@@ -472,10 +546,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
     margin-top: 2vh;
   }
 
-  
-.fab{
-  margin-top: 2vh;
-}
+  .fab {
+    margin-top: 2vh;
+  }
 
   .btn {
     font-size: 1.5vw;

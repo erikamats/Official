@@ -15,7 +15,7 @@ const Home = (props) => (
              src={require("../images/background.jpg")} */}
    
 
-    <div id="main_content main_content_home">
+    <div id="main_content">
       <Menu />
 
       <h2 className="fade fade_ani h2">

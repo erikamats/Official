@@ -14,11 +14,12 @@ class Menu extends React.Component {
 
   render() {
     return (
-      <div id="header" className="fade fade_ani social">
- 
-        <a href="/">
-          <h1 className="h1 hideme2">Erika Matsumoto</h1>
-        </a>
+      <div id="header" className="fade fade_ani ">
+        <div className="h1 hideme2">
+          <a href="/">
+            <h1 >Erika Matsumoto</h1>
+          </a>
+        </div>
 
         <div id="menu">
           <a href="/" className="hideme menuitem">

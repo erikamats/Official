@@ -1,6 +1,13 @@
 import React from "react";
 import { Row, Col, Card, CardTitle } from "react-materialize";
-import { FaJsSquare, FaReact, FaHtml5, FaCss3, FaNodeJs } from "react-icons/fa";
+import {
+  FaJsSquare,
+  FaReact,
+  FaHtml5,
+  FaCss3,
+  FaNodeJs,
+  FaGithub
+} from "react-icons/fa";
 import Menu from "../components/Menu";
 
 class Work extends React.Component {
@@ -10,7 +17,6 @@ class Work extends React.Component {
         <Menu />
 
         <div id="main_content">
-
           <Row className="center">
             <Col s={12} m={6} l={4}>
               <Card
@@ -28,12 +34,13 @@ class Work extends React.Component {
                 onClick={() =>
                   window.open(
                     "https://erikamats.github.io/TrainActivity/",
-                    "_blank")
+                    "_blank"
+                  )
                 }
                 header={
                   <CardTitle image={require("../images/TrainSchedule.png")} />
                 }
-        >
+              >
                 Train Schedule
               </Card>
             </Col>
@@ -48,22 +55,21 @@ class Work extends React.Component {
                 Daria Themed - Click Game &nbsp; <FaReact className="valign" />
               </Card>
             </Col>
-
           </Row>
 
           <Row>
-            <h3>Experience:</h3>
+            <h3 className="h3">Experience:</h3>
             <div className="languages">
               <div className="fabexp ">
                 <FaHtml5 className="html5 exp" />
               </div>
 
               <div className="fabexp ">
-                <FaJsSquare className="javasxcript exp" />
+                <FaCss3 className="javasxcript exp" />
               </div>
 
               <div className="fabexp ">
-                <FaCss3 className="javasxcript exp" />
+                <FaJsSquare className="javasxcript exp" />
               </div>
 
               <div className="fabexp ">
@@ -74,12 +80,11 @@ class Work extends React.Component {
                 <FaReact className="javasxcript exp" />
               </div>
 
-              {/* <div className="fab html">
-                <FaNodeJs className="javasxcript exp" />
-              </div> */}
+              <div className="fabexp">
+                <FaGithub className="javasxcript exp" />
+              </div>
             </div>
           </Row>
-
         </div>
       </div>
     );

@@ -13,17 +13,17 @@ class Contact extends React.Component {
 
         <div id="main_content">
           <Row>
-            <Col m={12} l={5}>
+            <Col className="touch" m={12} l={5} s={12}>
               <div className="touch">
                 <h2>Get in Touch!</h2>
                 <h4 className="touchline"> I'd love to hear from you!</h4>
               </div>
 
-              <div className="contact-info">
+              <div className="contact-info " >
                 <h3> Erika Matsumoto</h3>
                 <p> Austin, Texas </p>
 
-                <span>(512) 813-0589</span>
+                <span>(512) 813-0589 </span>
 
                 <div id="social fade fade_ani">
                 <div
@@ -61,7 +61,7 @@ class Contact extends React.Component {
               >
                 <Input
                   l={6}
-                  m={12}
+                  m={6}
                   s={12}
                   label="First Name"
                   name="first-name"
@@ -70,7 +70,7 @@ class Contact extends React.Component {
                  <MdStreetview/>
                 </Input>
 
-                <Input l={6} m={12}  s={12} label="Last Name" name="last-name" validate>
+                <Input l={6} m={6}  s={12} label="Last Name" name="last-name" validate>
                 <MdStreetview/>
                 </Input>
 
@@ -78,6 +78,7 @@ class Contact extends React.Component {
                   type="email"
                   name="email"
                  label="Your Email"
+                 l={6} m={6}
                   s={12}
                   validate
                 >
@@ -86,6 +87,7 @@ class Contact extends React.Component {
 
                 <Input
                   s={12}
+                  l={6} m={6}
                   label="Telephone"
                   name="phoneNumber"
                   validate
@@ -95,6 +97,7 @@ class Contact extends React.Component {
                 </Input>
 
                 <Input
+            
                   s={12}
                   type="textarea"
                   name="message"
