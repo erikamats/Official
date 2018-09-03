@@ -107,13 +107,13 @@ class Contact extends React.Component {
                 </Input>
 
                 <Row>
-                  <Col s={3} />
-                  <Col s={6}>
+                  <Col s={3} m={3} l={3} />
+                  <Col s={6} m={6} l={6} className="center">
                     <Button type="submit" value="Send" className="form-btn">
                       Send an Email!
                     </Button>
                   </Col>
-                  <Col s={3} />
+                  <Col s={3} m={3} l={3}/>
                 </Row>
               </form>
             </Col>

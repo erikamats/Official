@@ -5,6 +5,8 @@ import Menu from "../components/Menu";
 const Home = (props) => (
   //hero
   <div id="main-home">
+
+     <Menu />
     <img
       src={require("../images/portrait.jpg")}
       className="main-image"
@@ -16,7 +18,7 @@ const Home = (props) => (
    
 
     <div id="main_content">
-      <Menu />
+   
 
       <h2 className="fade fade_ani h2">
         Full Stack Web Developer 

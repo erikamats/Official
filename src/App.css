@@ -111,7 +111,7 @@ p {
 /* Main */
 
 #container {
-  margin: 2ch auto;
+  margin: 2vh auto;
   max-width: 1134px;
   position: relative;
 }
@@ -122,7 +122,6 @@ p {
   height: 100vh;
   display: table-cell;
   vertical-align: middle;
-  margin: auto;
 }
 
 .main-image {
@@ -147,14 +146,18 @@ p {
   height: 634px;
   display: table-cell;
   vertical-align: middle;
+  width: 100vw;
 }
 
 #header {
-  top: 10vw;
-  position: fixed;
+  top: 5vw;
+  position: absolute;
   /* above used to be absolute */
   width: 1134px;
- 
+}
+
+.h1 {
+  display: inline;
 }
 
 #header #social {
@@ -170,8 +173,8 @@ p {
 
 #menu {
   display: inline;
-  position: relative;
-  top: -27px;
+  /* position: inherit;
+  top: -27px; */
   left: 22vw;
 }
 
@@ -181,8 +184,11 @@ p {
 
 .h2 {
   text-shadow: -1px 1px 0.9px rgba(119, 118, 118, 0.842);
+  margin-bottom: 10vh;
 }
-
+.h3{
+  margin-top: 5.5vh;
+}
 .hideme {
   display: none;
 }
@@ -191,14 +197,14 @@ p {
 
 .card {
   box-shadow: 0 2px 6px rgb(54, 54, 54) !important;
-  opacity: 0.5;
+  opacity: 0.7;
   width: 300px;
   max-height: 300px !important;
-  margin-left: 1.5vw;
-  margin: 1.5vw auto;
 
-  transition-timing-function: ease-in-out;
-  transition-duration: 1.2s;
+  margin: 5vh auto;
+
+  transition-timing-function: cubic-bezier(0.95, 0.09, 0.68, 0.33);
+  transition: transform 1.5s;
   transform: scale(1);
 }
 
@@ -208,9 +214,9 @@ p {
   opacity: 1;
   box-shadow: -15px 10px 50px #4932057e !important;
 
-  transition-timing-function: cubic-bezier(0, 0.01, 0.24, 1.29);
-  transition-duration: 2s;
-  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.55, 0.09, 0.68, 0.53);
+  transition: transform 1.2s;
+  transform: scale(1.3);
 }
 .card-image {
   width: 300px;
@@ -336,7 +342,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .btn {
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
   display: inline-block;
-  margin-left: 3vh;
+
   font-size: 0.8vw;
   padding: 0 30px;
   line-height: 3vh;
@@ -346,11 +352,15 @@ textarea.materialize-textarea:focus:not([readonly]) {
   color: white;
   border-radius: 4px;
   cursor: pointer;
+  transform: translateY(0px);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .button:hover,
 .btn:hover {
   background-image: linear-gradient(200deg, #f6d365 0%, #fda085 105%);
-  transform: translateY(1px) 1.5s;
+  transform: translateY(1px);
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   font-size: 0.9vw;
 }
 .button:active,
@@ -435,9 +445,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
     font-size: 30px;
     top: -10vh;
     left: 5vw;
-    padding-right: 6vw
+    padding-right: 6vw;
   }
-  
+
   .hideme2 {
     position: relative;
     left: 5vw;
@@ -446,10 +456,17 @@ textarea.materialize-textarea:focus:not([readonly]) {
   #menu {
     margin: 0 auto;
     top: -15vh;
-   left: 20vw
+    left: 18vw;
   }
+}
 
+@media screen and (max-width: 946px){
+  #header{
+position: absolute;
+margin: 0 auto;
+padding: 0 2px;
 
+  }
 }
 
 @media screen and (max-width: 1180px) {
@@ -459,9 +476,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
     text-align: center;
     margin: 0 auto;
   }
+
   #main_content {
-    width: 100vw;
     height: auto;
+    margin: 0 auto;
   }
 
   .hideme {
@@ -478,33 +496,32 @@ textarea.materialize-textarea:focus:not([readonly]) {
     width: 100%;
     text-align: center;
     bottom: 75vh;
-    
+    float: left;
   }
 
   .hideme2 {
     position: relative;
-    left: -15vw;
+    left: -25vw;
   }
 
   #menu {
     margin: 0 auto;
-    top: -15vh;
-    align-content: center;
-    /* left: -3.5vh */
-    right: -18vw;
-    ;
+    left: 25vw;
+    position: relative;
   }
 
   .h1 {
     font-size: 44px;
-    top: -11vh;
+    /* top: -11vh; */
+    display: inline;
   }
 
   .main-image {
     right: auto;
-    margin: 0 auto 1vh;
+    margin: 0 auto;
     width: 400px;
     position: static;
+    left: -1vw;
   }
 
   h2 {
@@ -513,8 +530,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
   .h2 {
     text-align: center;
     font-size: 30px;
-
     font-weight: 400;
+    
   }
 
   .h3 {
@@ -556,17 +573,30 @@ textarea.materialize-textarea:focus:not([readonly]) {
     margin-left: 25%;
   }
 
-  /* input,
-  .button {
-    height: 60px;
-    line-height: 60px;
-    display: block;
-    margin: 20px 0;
-    width: 100%;
-    font-size: 16px;
-  } */
-
   #footer {
     margin-top: -100px;
   }
+}
+
+
+@media screen and (max-width: 1298px) {
+/* 
+  #header{
+    top: 1vh;
+   bottom: 97vh;
+
+  } */
+  /* .h1 {
+    font-size: 30px;
+    top: -10vh;
+    left: 0vw;
+  }
+
+  #menu {
+    margin: 0 auto;
+    top: -10.6vh;
+    left: 1vw;
+  } */
+
+
 }

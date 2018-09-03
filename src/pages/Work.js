@@ -18,7 +18,7 @@ class Work extends React.Component {
 
         <div id="main_content">
           <Row className="center">
-            <Col s={12} m={6} l={4}>
+            <Col s={12} m={6} l={4} className="center">
               <Card
                 onClick={() =>
                   window.open("https://erikamats.github.io/Giphy/", "_blank")
@@ -29,7 +29,8 @@ class Work extends React.Component {
               </Card>
             </Col>
 
-            <Col s={12} m={6} l={4}>
+            <Col s={12} m={6} l={4}
+            className="allcards">
               <Card
                 onClick={() =>
                   window.open(
@@ -45,7 +46,8 @@ class Work extends React.Component {
               </Card>
             </Col>
 
-            <Col s={12} m={6} l={4}>
+            <Col s={12} m={6} l={4}
+            className="allcards">
               <Card
                 onClick={() =>
                   window.open("https://daria-game.now.sh/", "_blank")
