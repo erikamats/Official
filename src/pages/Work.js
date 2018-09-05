@@ -18,7 +18,7 @@ class Work extends React.Component {
 
         <div id="main_content">
           <Row className="center">
-            <Col s={12} m={6} l={4} className="center">
+            <Col s={12} m={6} l={3} className="center">
               <Card
                 onClick={() =>
                   window.open("https://erikamats.github.io/Giphy/", "_blank")
@@ -29,7 +29,7 @@ class Work extends React.Component {
               </Card>
             </Col>
 
-            <Col s={12} m={6} l={4}
+            <Col s={12} m={6} l={3}
             className="allcards">
               <Card
                 onClick={() =>
@@ -46,7 +46,7 @@ class Work extends React.Component {
               </Card>
             </Col>
 
-            <Col s={12} m={6} l={4}
+            <Col s={12} m={6} l={3}
             className="allcards">
               <Card
                 onClick={() =>
@@ -57,6 +57,19 @@ class Work extends React.Component {
                 Daria Themed - Click Game &nbsp; <FaReact className="valign" />
               </Card>
             </Col>
+
+     <Col s={12} m={6} l={3}
+            className="allcards">
+              <Card
+                onClick={() =>
+                  window.open("https://erikamats.github.io/Word-Guess-Name/")
+                }
+                header={<CardTitle image={require("../images/HonestBaby.png")} />}
+              >
+                Honest Co. Themed - Word Guess &nbsp; <FaJsSquare className="valign" />
+              </Card>
+            </Col>
+
           </Row>
 
           <Row>
