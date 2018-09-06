@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway|Montserrat|Playfair+Display+SC);
+@import url(https://fonts.googleapis.com/css?family=Muli|Montserrat|Playfair+Display+SC);
 
 :root {
   --darkteal: #596e79;
@@ -6,29 +6,36 @@
   --tan: #c7b198;
   --mediumSand: #dfd3c3;
   --sand: #f0ece2;
-  --raleway: "Raleway", sans-serif;
+  --Muli: "Muli", sans-serif;
   --BigText: "Playfair Display SC", serif;
   --NormalText: "Montserrat", sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0vh;
-  height: 7vh;
+  margin: 0vh 3vw;
+  height: 99vh;
   padding: 0vh;
-  border-bottom: 1px solid rgb(248, 22, 199);
-  font-family: var(--raleway);
+  border-bottom: 1px dotted rgb(248, 22, 199);
+  font-family: var(--Muli);
+  color: red;
+  font-size: 5vh;
 }
+
 
 #nav {
   height: 6vh;
   max-height: 6vh;
   margin: 0 1vw;
   padding: 0;
-  border-bottom: 1px solid var(--darkteal);
+  /* border-bottom: 1px solid var(--darkteal); */
+  position: sticky;
 }
 
 .navLogo {
-  width: 40vw;
+  /* width: 40vw; */
   margin: 0;
   padding: 0;
   /* border: 2px solid yellowgreen; */
@@ -39,6 +46,8 @@ body {
   line-height: 6vh;
   max-height: 6vh;
   color: var(--darkteal);
+  font-family: var(--BigText);
+  letter-spacing: .2vw;
 
   display: flex;
   flex-wrap: nowrap;
@@ -63,15 +72,16 @@ body {
 .menuitem {
   margin: 0;
   font-size: 2vh;
-  color: var(--darkteal);
-  text-align: center;
+  color: var(--darkteal); 
   justify-content: center;
   display: flex;
   flex-wrap: nowrap;
   flex: 1;
+
+
 }
 .menuitem:hover {
-  background-color: var(--mediumSand);
+  background-color: var(--sand);
   margin-bottom: 0.5px;
 }
 
@@ -79,23 +89,30 @@ a * {
   color: var(--darkteal);
 }
 
-/* img{
-  width: 450px;
-} */
+.appheader {
+  height: 90vh;
+  border-bottom: 2px solid rgb(22, 248, 116);
+}
+
+#container {
+  height: 84vh;
+  object-fit: none;
+  overflow: hidden;
+  
+}
 
 .main-image {
-  width: 450px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  /* above was at 310 */
-  z-index: -100;
-  opacity: 0.85;
-  animation-name: main-image;
-  animation-duration: 2s;
-  transition: none;
-  border-radius: 700px;
-  border: 4px dotted #28385eac;
-  box-shadow: 5px 7px 50px #888888;
-  transform: translateY(-6.4px);
+  margin: 0 auto;
+  width:100vw;
+  height:auto;
+  opacity: 0.1;
+  object-position: -50px -35vh;
+
+
+}
+
+.block{
+  background-color: var(--mediumSand);
+  z-index: 1;
+ 
 }
