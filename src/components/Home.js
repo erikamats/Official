@@ -1,23 +1,35 @@
 import React from "react";
-import { FaGithubSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import Menu from "../components/Menu"
+// import { FaGithubSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Home = () => (
-  <div className="appheader">
-    <Menu />
-    <div id="container">
+  <div className="home-header">
+    <div id="imgcontainer">
       <img
         src={require("../images/banner.JPG")}
-        className="main-image"
+        className="main-image .col-12"
         alt="erika"
       />
-
-      <div className="block">
-        <p > Full Stack Developer</p>
-      </div>
+      <div className="block" /> <p className="stack">Full Stack Developer</p>
     </div>
   </div>
 );
+
+// const Home = () => (
+//   <div className="home-header">
+
+//     <div className="containter">
+//       <div id="imgcontainer">
+//         <img
+//           src={require("../images/banner.JPG")}
+//           className="main-image .col-12"
+//           alt="erika"
+//         />
+//         <div className="block" /> <p className="stack">Full Stack Developer</p>
+//       </div>
+//     </div>
+
+//   </div>
+// );
 export default Home;
 
 //hero
