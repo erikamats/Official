@@ -354,10 +354,7 @@ a * {
   right: -3.8vw !important;
 }
 button {
-  width: 100%;
-  margin: 0 auto !important;
- 
- 
+  width: 100%; 
 }
 
 .btn.btn-md .fa {
@@ -384,7 +381,7 @@ button {
   
   background-color: var(--tan) !important;
   color: #fff !important;
-  margin: 0 auto !important;
+  margin: 0 auto ;
   display: block;
   
   -webkit-transform: perspective(1px) translateZ(0);

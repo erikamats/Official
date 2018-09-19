@@ -57,13 +57,13 @@ class Menu extends React.Component {
         
 
         <div id="menu">
-          <div className="hideme menuitem" onClick={() => scroll.scrollTo(500)} >About</div>
+          <div className="hideme menuitem" onClick={() => scroll.scrollTo(200)} >About</div>
 
-          <div className=" menuitem" onClick={() => scroll.scrollTo(1080)}>Work</div>
+          <div className=" menuitem" onClick={() => scroll.scrollTo(800)}>Work</div>
 
           <div className=" menuitem"
           
-          onClick={() => scroll.scrollTo(1600)}>Contact</div>
+          onClick={() => scroll.scrollTo(1500)}>Contact</div>
         </div>
       </div>
     );

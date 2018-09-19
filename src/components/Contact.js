@@ -46,7 +46,7 @@ class Contact extends React.Component {
           </div>
         </div>
 
-        {/* <div className="empty"/> */}
+        
         <div className="contact-form">
           <form
             action="https://formspree.io/erikacodes@gmail.com"
@@ -70,9 +70,9 @@ class Contact extends React.Component {
             </Input>
 
             <Row>
-              <Col s={3} m={3} l={3} />
-              <Col s={3} m={3} l={3} />
-              <Col s={6} m={6} l={6} className="center">
+              <Col s={3} m={3} l={2} />
+              <Col s={3} m={3} l={2} />
+              <Col s={6} m={6} l={8} className="center">
                 <button
                   type="submit"
                   value="Send"
@@ -81,11 +81,12 @@ class Contact extends React.Component {
                   Send <IoMdPaperPlane />
                 </button>
               </Col>
+              
             </Row>
           </form>
         </div>
 
-        {/* <div className="empty"/> */}
+       
 
         <div className="touch ">
           <h2 className="contact-reach">Get in Touch!</h2>

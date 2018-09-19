@@ -75,7 +75,7 @@ class MultiCarouselPage extends Component {
                   <Card className="mb-2">
                     <CardImage
                       className="img-fluid"
-                      src="https://res.cloudinary.com/matsi/image/upload/v1536597187/portfolio/Daria.png"
+                      src="https://res.cloudinary.com/matsi/image/upload/v1537200009/portfolio/Screen_Shot_2018-09-10_at_11.42.21_AM.png"
                     />
                     <CardBody>
                       <CardTitle>Daria Click Game</CardTitle>
@@ -100,7 +100,7 @@ class MultiCarouselPage extends Component {
                           )
                         }
                       >
-                        <Fa icon="github" className="left" /> <span className="d-none d-sm-none d-md-block">Github</span>
+                        <Fa icon="github" className="left" /> <span className="d-none d-sm-none d-md-block ">Github</span>
                       </button>
                     </CardBody>
                   </Card>
