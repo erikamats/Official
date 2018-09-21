@@ -18,10 +18,7 @@ import "./App.css";
 import "./Queries.css";
 let now = moment().format("YYYY");
 
-
 class App extends Component {
-  
- 
   componentDidMount() {
     scrollToComponent(this.Home, {
       offset: 0,
@@ -54,7 +51,9 @@ class App extends Component {
             <div
               className="menuitem"
               onClick={() =>
-                scrollToComponent(this.About)
+                scrollToComponent(this.About, {
+                  ease: "inOutBack"
+                })
               }
             >
               About
@@ -63,13 +62,13 @@ class App extends Component {
             <div
               className="menuitem"
               onClick={() =>
-              scrollToComponent(this.MCP, {
-                offset: 300,
-                align: "top",
-                duration: 1500,
-                ease: "inOutBack"
-              })
-            }
+                scrollToComponent(this.MCP, {
+                  offset: 300,
+                  align: "top",
+                  duration: 1500,
+                  ease: "inOutBack"
+                })
+              }
             >
               Work
             </div>
@@ -77,13 +76,13 @@ class App extends Component {
             <div
               className="menuitem"
               onClick={() =>
-              scrollToComponent(this.GIT , {
-                offset: 1000,
-                align: "top",
-                duration: 1500,
-                ease: "inOutBack"
-              })
-            }
+                scrollToComponent(this.GIT, {
+                  offset: 890,
+                  align: "top",
+                  duration: 2000,
+                  ease: "inOutBack"
+                })
+              }
             >
               Contact
             </div>
@@ -120,7 +119,7 @@ class App extends Component {
           <section
             className="git"
             ref={section => {
-              (this.GIT = section);
+              this.GIT = section;
             }}
           >
             <Contact />
@@ -160,24 +159,45 @@ class App extends Component {
             </div>
 
             <div className="copy-right col-4">
-              <span  onClick={() =>
-                scrollToComponent(this.Home )
-              }> Home</span>
-              <span  onClick={() =>
-                scrollToComponent(this.About )
-              } > About</span>
-              <span  
-              onClick={() =>
-              scrollToComponent(this.MCP, {
-                offset: -300,
-                align: "top",
-                duration: 1500,
-                ease: "inOutBack"
-              })
-            }> Work</span>
-              <span  onClick={() =>
-                scrollToComponent(this.Contact )
-              }> Contact</span>
+              <span
+                onClick={() =>
+                  scrollToComponent(this.Home, {
+                    duration: 2000,
+                    ease: "inOutBack"
+                  })
+                }
+              >
+                {" "}
+                Home
+              </span>
+              <span
+                onClick={() =>
+                  scrollToComponent(this.About, {
+                    duration: 1500,
+                    ease: "inOutBack"
+                  })
+                }
+              >
+                {" "}
+                About
+              </span>
+              <span
+                onClick={() =>
+                  scrollToComponent(this.MCP, {
+                    offset: 300,
+                    align: "top",
+                    duration: 1500,
+                    ease: "inOutBack"
+                  })
+                }
+              >
+                {" "}
+                Work
+              </span>
+              <span onClick={() => scrollToComponent(this.Contact)}>
+                {" "}
+                Contact
+              </span>
             </div>
           </div>
         </div>
@@ -187,12 +207,3 @@ class App extends Component {
 }
 
 export default App;
-
-/* <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/work" component={Work} />
-            <Route exact path="/contact" component={Contact} />
-            <Route component={NotFound} />
-          </Switch>
-        </BrowserRouter> */
