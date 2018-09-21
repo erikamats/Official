@@ -1110,6 +1110,8 @@
   .contact-reach{
       right: 0vw;
   }
-
+.copy-left{
+  text-align: left !important
+}
 
 }

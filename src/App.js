@@ -126,7 +126,13 @@ class App extends Component {
           </section>
 
           <div className="footer-container col-12 ">
-            <div className="copy-left col-4">
+            <div className="copy-left col-4"
+              onClick={() =>
+                  scrollToComponent(this.Home, {
+                    duration: 2000,
+                    ease: "inOutBack"
+                  })
+                }>
               <span className="copyright">
                 Copyright © {now} Erika Matsumoto
               </span>
