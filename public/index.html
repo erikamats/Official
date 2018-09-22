@@ -30,15 +30,50 @@
 </head>
 
 <body>
+<!--CSS Spinner-->
+<div class="spinner-wrapper">
+<div class="spinner">
+  <div class="cube1"></div>
+  <div class="cube2"></div>
+</div>
+</div>
+
+
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
   <!-- Import jQuery before materialize.js -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script>
+$(document).ready(function() {
+//Preloader
+$(window).on("load", function() {
+preloaderFadeOutTime = 500;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+});
+</script>
 
   <div id="root"></div>
 
 </body>
+<script>
+$(document).ready(function() {
+//Preloader
+$(window).on("load", function() {
+preloaderFadeOutTime = 5000;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+});
+</script>
 
 </html>
