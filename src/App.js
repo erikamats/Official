@@ -23,7 +23,7 @@ class App extends Component {
     scrollToComponent(this.Home, {
       offset: 0,
       align: "bottom",
-      duration: 1500,
+      duration: 2000,
       ease: "inOutBounce"
     });
   }

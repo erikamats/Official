@@ -674,6 +674,7 @@ button {
   color: var(--mediumSand);
   font-size: 1.5vh;
   flex-direction: inline-flex;
+  cursor: pointer;
 }
 .copy-left {
   font-family: var(--BigText);
