@@ -233,7 +233,7 @@
     flex-direction: row;
     width: 88vw;
     margin: 4px;
-    height: 20vh;
+    height: 22vh;
     margin-top: 0.5vh;
   }
 
@@ -243,8 +243,10 @@
   }
 
   .card-text {
-    font-size: 0.7rem !important;
-    position: absolute;
+    font-size: 0.5rem;
+    position: relative;
+    text-align: center;
+    width: 40vw;
   }
 
   .card-body {
@@ -255,14 +257,11 @@
   .img-fluid,
   .mask,
   .view {
-    width: 600px;
+   width: 100vw;
     object-fit: cover !important;
   }
 
-  button {
-    width: 10vw;
-    top: -1vh !important;
-  }
+ 
 
   .left {
     display: none;
@@ -270,9 +269,11 @@
 
   .btn,
   .btn-md {
-    width: 25vw;
-    margin: 0 6vw !important;
+    width: 5vw;
+    margin: 0 5vw ;
     position: relative;
+    bottom: 0;
+    left: 2.2vw;
 
     /* color: var(--darkteal) !important */
   }
@@ -407,8 +408,7 @@
   .hi {
     font-style: italic;
     font-size: 3vh;
-    color: var(--tan)
-   
+    color: var(--tan);
   }
 
   .contact-form {
@@ -501,7 +501,7 @@
   }
 
   .slides {
-    height: 78vh;
+    height: 81vh;
     margin: 0.25vh auto;
   }
 
@@ -511,7 +511,7 @@
     left: 0vw;
     /* margin: 2vh 8vw;
     top: -2vh; */
-    margin-top: 10vh;
+    margin-top: 9vh;
   }
 
   .card-col {
@@ -523,7 +523,7 @@
     flex-direction: row;
     width: 88vw;
     margin: 0vh 4vw;
-    height: 20vh;
+    height: 22vh;
     margin-top: 0.5vh;
   }
 
@@ -537,7 +537,8 @@
   }
 
   .card-text {
-    font-size: 0.7rem !important;
+    font-size: 0.5rem;
+    
   }
 
   .img-fluid,
@@ -550,12 +551,12 @@
   .btn {
     /* margin-right: .5vw !important; */
     width: 20%;
-    margin: 2vh auto !important;
-    margin-left: 15% !important;
-    bottom: -0.5vh !important;
-    display: inline-flex;
+    margin: 0vh 5vw !important;
+    /* margin-left: 15% !important; */
+     display: inline-flex;
     flex: 1 !important;
     justify-content: center;
+    position: relative;
   }
 
   .btn.btn-md .fa {
@@ -684,7 +685,7 @@
   .hi {
     font-style: italic;
     font-size: 3vh;
-    color: var(--tan)
+    color: var(--tan);
   }
 
   .contact-form {
@@ -721,11 +722,15 @@
   .main-image {
     object-position: 0px -21vh;
   }
+  .card-text{
+    text-align: center
+  }
   .btn {
-    width: 33.33%;
-    margin-left: 11% !important
-;
-    margin-top: 4vh !important;
+    width: 30%;
+        margin-top: 3vh !important;
+        left:2vw;
+        position: relative;
+        margin: 0 3vw!important
   }
 
   .fa {
@@ -829,16 +834,30 @@
 
   .card-title {
     font-size: 2.5vh !important;
+
   }
+  
 
   .card-body {
     width: 100%;
-  }
+    bottom: 0;
+    position: relative;
+    }
+
+.card-text{
+  font-size: .9rem !important;
+}
 
   .carousel-indicators {
     top: 62vh;
     position: absolute;
     height: 2vh;
+  }
+
+  .btn{
+    margin: 0 2vw !important;
+    margin-top: 2vh !important;
+    position: relative;
   }
 
   /* ----Contact---- */
@@ -1047,34 +1066,45 @@
   .main-image {
     object-position: 0 -30vh;
   }
-  .block{
- position: relative;
+  .block {
+    position: relative;
     top: 36vh;
     left: 60vw;
     height: 3.5vh;
   }
 
-  .stack{
+  .stack {
     position: absolute;
     top: 34vh;
     left: 61.8vw;
   }
-  .iAm-stack{
-      font-size: 6vh;
-      top: 1vh;
-      left: 5vw;
+  .iAm-stack {
+    font-size: 6vh;
+    top: 1vh;
+    left: 5vw;
   }
 
   .dots {
     font-size: 4.5vh;
-
   }
 
   .work-block {
-    width:19vw;
-}
-  
-    .content-form {
+    width: 19vw;
+  }
+
+  .card-text {
+    text-align: center;
+    margin: 0.5vw;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .btn {
+    margin-top: 6vh !important
+
+  }
+
+  .content-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1100,18 +1130,17 @@
     padding: 2px;
   }
 
-  .form-btn{
+  .form-btn {
     display: flex;
     justify-content: center;
     align-content: center;
     position: relative;
   }
 
-  .contact-reach{
-      right: 0vw;
+  .contact-reach {
+    right: 0vw;
   }
-.copy-left{
-  text-align: left !important
-}
-
+  .copy-left {
+    text-align: left !important;
+  }
 }

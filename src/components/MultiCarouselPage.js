@@ -25,7 +25,7 @@ class MultiCarouselPage extends Component {
    
         <Carousel
           activeItem={1}
-          length={3}
+          length={2}
           slide={true}
           showIndicators={true}
           className="carousel slide carousel-multi-item"
@@ -45,7 +45,7 @@ class MultiCarouselPage extends Component {
                     <CardBody>
                       <CardTitle>Giphy API Request</CardTitle>
                       <CardText className="d-none d-sm-block d-md-block">
-                        Get to know me! This dynamic web pages populates gifs that describe some of the things I like by calling the Giphy API and using Javascript and jQuery to change the HTML on the site.
+                        This dynamic web pages populates gifs that describe some of the things I like and enjoy by calling the Giphy API and using Javascript and jQuery to change the HTML on the site.
                       </CardText>
                       <button
                         className="btn btn-md "
@@ -80,7 +80,7 @@ class MultiCarouselPage extends Component {
                     <CardBody>
                       <CardTitle>Daria Click Game</CardTitle>
                       <CardText className="d-none d-sm-block d-md-block">
-                        Inspired by one of my favorite TV shows, this memory game breaks up the application's UI into components, manages component state and responds to user events. See
+                        Inspired by one of my favorite TV shows, this memory game manages component state and responds to user events. See
                         if you can avoid clicking the same image twice!
                       </CardText>
                       <button
@@ -263,7 +263,7 @@ class MultiCarouselPage extends Component {
 
                 
               </CarouselItem>
-              <CarouselItem itemId="3">
+              {/* <CarouselItem itemId="3">
               <div className="card-col d-sm-block d-md-block ">
                   <Card className="mb-2">
                     <CardImage
@@ -371,7 +371,7 @@ class MultiCarouselPage extends Component {
                     </CardBody>
                   </Card>
                 </div>
-              </CarouselItem>
+              </CarouselItem> */}
             </Row>
           </CarouselInner>
         </Carousel>
