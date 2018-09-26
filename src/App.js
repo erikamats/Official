@@ -200,7 +200,7 @@ class App extends Component {
                 {" "}
                 Work
               </span>
-              <span onClick={() => scrollToComponent(this.Contact)}>
+              <span  className="footer-contact" onClick={() => scrollToComponent(this.Contact)}>
                 {" "}
                 Contact
               </span>

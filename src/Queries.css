@@ -177,12 +177,12 @@
   }
 
   .about-container {
-    height: 30vh;
+    height: 50vh;
     margin: 0;
   }
 
   .iAm-label {
-    height: 28vh;
+    height: 97%;
     margin: 1vh 0;
   }
 
@@ -199,7 +199,10 @@
 
   .iAm-merp {
     font-size: 1.5vh;
-    top: -25vh;
+    top: 0vh;
+    position: absolute;
+    margin-top: 30px;
+    margin-right: 25px;
   }
 
   .work-block {
@@ -470,12 +473,12 @@
     object-position: 0 -17vh;
   }
   .about-container {
-    height: 30vh;
+    height: 70vh;
     margin: 0;
   }
 
   .iAm-label {
-    height: 28vh;
+    height: 97%;
     margin: 1vh 0;
   }
   .iAm-stack {
@@ -490,11 +493,12 @@
   }
 
   .iAm-merp {
-    font-size: 1.5vh;
+    font-size: 1.9vh;
     top: 0vh;
     height: 100%;
     position: absolute;
-    padding: 10vh 2vw;
+    padding: 6vh 2vw;
+
   }
   .work-block {
     width: 31vw;
@@ -716,11 +720,25 @@
     justify-content: center;
     align-items: center;
   }
+
+
+  .copy-right{
+    font-size: 2vw
+  }
+
+  .footer-contact{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .main-image {
     object-position: 0px -21vh;
+  }
+
+  .iAm-merp{
+    line-height: 3.4vh ;
+    padding: 6vh 2vw;
   }
   .card-text{
     text-align: center
@@ -742,10 +760,14 @@
     width: 2.3vw !important;
     margin: 0 0.85vw;
   }
-  .copy-left,
-  .copy-right {
-    font-size: 0.71rem;
+  .copy-left {
+    font-size: .85rem;
     text-align: center;
+  }
+
+  .copy-right {
+    font-size: 1rem;
+
   }
 }
 
@@ -767,7 +789,7 @@
 
   .about-container {
     margin: 1vh 0vw 0vh;
-    height: 47vh;
+    height: 50vh;
     padding: 0vh;
     /* border: 2px solid red */
   }
@@ -781,6 +803,14 @@
     margin-top: 1vh;
     position: relative;
   }
+
+  
+.iAm-merp{
+font-size: 1.6vh;
+line-height: 2.7vh;
+padding: 6vh 1.5vw;
+}
+ 
 
   .block {
     width: 35vw;
@@ -868,6 +898,7 @@
     position: relative;
     height: 52.55vh;
     padding: 0vw !important;
+
   }
   .contact-label {
     background-color: var(--sand);
@@ -978,9 +1009,9 @@
     font-size: 1vh;
     height: 100%;
     padding: 5vh 0;
-    margin-left: 0vw !important;
+    margin-left: -.5vw !important;
     margin: 0 auto;
-    width: 33.33%;
+    width: 50%;
     position: absolute;
     top: 5vh;
   }
@@ -990,7 +1021,8 @@
   }
 
   .input-field .prefix ~ input,
-  .input-field .prefix ~ label {
+  .input-field .prefix ~ label ,
+  .input-field .prefix ~ textarea {
     margin-left: 4rem;
   }
 
@@ -1038,6 +1070,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    right:0;
   }
 
   .merp {
@@ -1061,27 +1094,33 @@
   .home-header,
   #imgcontainer {
     width: 100%;
-    height: 90vh;
+    height: 85vh
+  
   }
   .main-image {
     object-position: 0 -30vh;
   }
   .block {
-    position: relative;
-    top: 36vh;
+    position: absolute;
+    /* top: 36vh;
     left: 60vw;
-    height: 3.5vh;
+    height: 3.5vh; */
   }
 
   .stack {
     position: absolute;
-    top: 34vh;
-    left: 61.8vw;
+  
   }
   .iAm-stack {
     font-size: 6vh;
     top: 1vh;
     left: 5vw;
+  }
+
+  .iAm-merp{
+    font-size: 2.2vh;
+    line-height: 2.9vh;
+    padding: 8vh 2vw
   }
 
   .dots {
@@ -1143,4 +1182,10 @@
   .copy-left {
     text-align: left !important;
   }
+
+  .copy-left,
+.copy-middle,
+.copy-right{
+  padding-left: 4vw;
+}
 }

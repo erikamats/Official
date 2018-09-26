@@ -320,6 +320,7 @@ a * {
   margin: 0 20vw;
   letter-spacing: 0.105vw;
   font-size: 2vh;
+
   position: absolute;
   top: -30vh;
   text-align: right;
@@ -675,6 +676,8 @@ button {
   font-size: 1.5vh;
   flex-direction: inline-flex;
   cursor: pointer;
+  
+padding-left:0;
 }
 .copy-left {
   font-family: var(--BigText);
