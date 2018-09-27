@@ -153,6 +153,71 @@
   animation-iteration-count: 1;
 }
 
+@media only screen and (max-width: 480px){
+
+  .main-image{
+    object-position: 0 -11.5vh !important;
+
+  }
+
+.btn{
+  display: inline-block;
+}
+
+.btn,.btn-md{
+  padding: 0.1rem 1rem;
+}
+
+ .btn-md {
+  width: 30vw !important;
+  margin: 0 5vw;
+  position: relative;
+  bottom: 0;
+  left: 0vw !important;
+  padding: 0vw
+}
+
+.btn.btn-md .fa {
+  width:20%;
+  font-size: 1rem !important;
+  padding: 0;
+  margin: 0 auto !important;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.left{
+  display:block !important;
+
+}
+.card-title {
+  margin-bottom: 2rem;
+}
+
+.iAm-stack{
+font-size: 2.4vh !important;
+width:100%;
+line-height: 2.5vh ;
+top: 3.7vh !important;
+}
+
+.dots{
+  display:none
+}
+
+.iAm-merp {
+  font-size: 1.45vh !important;
+  top: 0vh;
+  position: absolute;
+  margin-top: 30px !important;
+  margin-right: 20px !important;
+  text-align: justify;
+}
+
+.work-block{
+  width: 20.5vw !important;
+}
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
@@ -187,13 +252,16 @@
   }
 
   .iAm-stack {
-    font-size: 4.8vw;
-    left: 3vw;
+    font-size:5.5vw;
+    left:.65vw;
+    top: 1.5vh;
+    width:100%;
+    letter-spacing: 0;
   }
   .iAm-block {
     display: inline-flex;
-    width: 16vw;
-    left: 3vw;
+    width: 20vw;
+    left: .2vw;
     top: 5vh;
   }
 
@@ -201,8 +269,9 @@
     font-size: 1.5vh;
     top: 0vh;
     position: absolute;
-    margin-top: 30px;
+    margin-top: 58px;
     margin-right: 25px;
+    text-align: justify;
   }
 
   .work-block {
@@ -246,7 +315,7 @@
   }
 
   .card-text {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     position: relative;
     text-align: center;
     width: 40vw;
@@ -260,11 +329,9 @@
   .img-fluid,
   .mask,
   .view {
-   width: 100vw;
+    width: 100vw;
     object-fit: cover !important;
   }
-
- 
 
   .left {
     display: none;
@@ -273,7 +340,7 @@
   .btn,
   .btn-md {
     width: 5vw;
-    margin: 0 5vw ;
+    margin: 0 5vw;
     position: relative;
     bottom: 0;
     left: 2.2vw;
@@ -482,12 +549,12 @@
     margin: 1vh 0;
   }
   .iAm-stack {
-    font-size: 4.8vw;
-    left: 3vw;
+    font-size: 4.7vw;
+    left: 2.8vw;
   }
   .iAm-block {
     display: inline-flex;
-    width: 16vw;
+    width: 16.2vw;
     left: 3vw;
     top: 5vh;
   }
@@ -498,14 +565,18 @@
     height: 100%;
     position: absolute;
     padding: 6vh 2vw;
-
+    line-height: 2.85vh;
+    
   }
   .work-block {
     width: 31vw;
   }
+  .work-stack {
+    font-size: 5vh;
+  }
 
   .slides {
-    height: 81vh;
+    height: 88vh;
     margin: 0.25vh auto;
   }
 
@@ -541,23 +612,25 @@
   }
 
   .card-text {
-    font-size: 0.5rem;
-    
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top: 0rem;
+    margin-bottom: 0;
   }
 
   .img-fluid,
   .mask,
   .view {
-    width: 700px;
+    width: 100%;
     object-fit: cover !important;
   }
 
   .btn {
     /* margin-right: .5vw !important; */
     width: 20%;
-    margin: 0vh 5vw !important;
+    margin: 4vh 5.5vw;
     /* margin-left: 15% !important; */
-     display: inline-flex;
+    display: inline-flex;
     flex: 1 !important;
     justify-content: center;
     position: relative;
@@ -721,12 +794,11 @@
     align-items: center;
   }
 
-
-  .copy-right{
-    font-size: 2vw
+  .copy-right {
+    font-size: 2vw;
   }
 
-  .footer-contact{
+  .footer-contact {
     display: none;
   }
 }
@@ -736,19 +808,19 @@
     object-position: 0px -21vh;
   }
 
-  .iAm-merp{
-    line-height: 3.4vh ;
+  .iAm-merp {
+    line-height: 3.4vh;
     padding: 6vh 2vw;
   }
-  .card-text{
-    text-align: center
+  .card-text {
+    text-align: center;
   }
   .btn {
     width: 30%;
-        margin-top: 3vh !important;
-        left:2vw;
-        position: relative;
-        margin: 0 3vw!important
+    margin-top: 3vh !important;
+    left: 2vw;
+    position: relative;
+    margin: 0 3vw !important;
   }
 
   .fa {
@@ -761,13 +833,12 @@
     margin: 0 0.85vw;
   }
   .copy-left {
-    font-size: .85rem;
+    font-size: 0.85rem;
     text-align: center;
   }
 
   .copy-right {
     font-size: 1rem;
-
   }
 }
 
@@ -804,13 +875,11 @@
     position: relative;
   }
 
-  
-.iAm-merp{
-font-size: 1.6vh;
-line-height: 2.7vh;
-padding: 6vh 1.5vw;
-}
- 
+  .iAm-merp {
+    font-size: 1.6vh;
+    line-height: 2.7vh;
+    padding: 6vh 1.5vw;
+  }
 
   .block {
     width: 35vw;
@@ -864,19 +933,17 @@ padding: 6vh 1.5vw;
 
   .card-title {
     font-size: 2.5vh !important;
-
   }
-  
 
   .card-body {
     width: 100%;
     bottom: 0;
     position: relative;
-    }
+  }
 
-.card-text{
-  font-size: .9rem !important;
-}
+  .card-text {
+    font-size: 0.9rem !important;
+  }
 
   .carousel-indicators {
     top: 62vh;
@@ -884,7 +951,7 @@ padding: 6vh 1.5vw;
     height: 2vh;
   }
 
-  .btn{
+  .btn {
     margin: 0 2vw !important;
     margin-top: 2vh !important;
     position: relative;
@@ -898,7 +965,6 @@ padding: 6vh 1.5vw;
     position: relative;
     height: 52.55vh;
     padding: 0vw !important;
-
   }
   .contact-label {
     background-color: var(--sand);
@@ -1009,7 +1075,7 @@ padding: 6vh 1.5vw;
     font-size: 1vh;
     height: 100%;
     padding: 5vh 0;
-    margin-left: -.5vw !important;
+    margin-left: -0.5vw !important;
     margin: 0 auto;
     width: 50%;
     position: absolute;
@@ -1021,7 +1087,7 @@ padding: 6vh 1.5vw;
   }
 
   .input-field .prefix ~ input,
-  .input-field .prefix ~ label ,
+  .input-field .prefix ~ label,
   .input-field .prefix ~ textarea {
     margin-left: 4rem;
   }
@@ -1070,7 +1136,7 @@ padding: 6vh 1.5vw;
     display: flex;
     justify-content: center;
     align-content: center;
-    right:0;
+    right: 0;
   }
 
   .merp {
@@ -1091,36 +1157,57 @@ padding: 6vh 1.5vw;
 }
 
 @media (min-width: 1200px) {
-  .home-header,
-  #imgcontainer {
+  .home-header {
     width: 100%;
-    height: 85vh
-  
+    height: 85vh;
+  }
+
+  #imgcontainer {
+    max-height: 100%;
+    height: 85vh;
   }
   .main-image {
     object-position: 0 -30vh;
   }
   .block {
     position: absolute;
-    /* top: 36vh;
-    left: 60vw;
+    top: 41%;
+    /*left: 60vw;
     height: 3.5vh; */
+    width: 34vw;
   }
 
   .stack {
     position: absolute;
-  
+    top: 38%;
+    left: 60.9vw;
   }
+
+  .about-container {
+    position: relative;
+    top: 0;
+    height: 65vh;
+  }
+  /* .iAm-block{
+    height: 97%;
+  } */
+
   .iAm-stack {
     font-size: 6vh;
     top: 1vh;
     left: 5vw;
   }
 
-  .iAm-merp{
-    font-size: 2.2vh;
-    line-height: 2.9vh;
-    padding: 8vh 2vw
+  .iAm-merp {
+    font-size: 2vh;
+    line-height: 3vh;
+    padding: 12vh 2vw;
+    text-align: justify;
+    letter-spacing: 0.8px;
+  }
+
+  .iAm-merp p {
+    padding: 1vh 0;
   }
 
   .dots {
@@ -1139,8 +1226,7 @@ padding: 6vh 1.5vw;
   }
 
   .btn {
-    margin-top: 6vh !important
-
+    margin-top: 6vh !important;
   }
 
   .content-form {
@@ -1184,8 +1270,8 @@ padding: 6vh 1.5vw;
   }
 
   .copy-left,
-.copy-middle,
-.copy-right{
-  padding-left: 4vw;
-}
+  .copy-middle,
+  .copy-right {
+    padding-left: 4vw;
+  }
 }

@@ -114,9 +114,7 @@ class MultiCarouselPage extends Component {
                     <CardBody>
                       <CardTitle>FreeNica</CardTitle>
                       <CardText className="d-none d-sm-block d-md-block">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content. Some quick example text to build on the card title and
-                        make up the bulk of the card's content. 
+                        Website built for nonprofit in efforts to bring more awareness to ongoing protests in Nicaragua. 
                       </CardText>
                       <button
                         className="btn btn-md "
@@ -190,7 +188,7 @@ class MultiCarouselPage extends Component {
                     <CardBody>
                       <CardTitle>Responsive Website</CardTitle>
                       <CardText className="d-none d-sm-block d-md-block">
-                        This was my first attempt creating a mobile-responsive layout soley using media queries for a dummy portfolio using HTML, CSS, GitHub and GitHub Pages.
+                       First mobile-responsive layout using media queries for a dummy portfolio using HTML, CSS, GitHub and GitHub Pages.
                       </CardText>
                   
                        <button

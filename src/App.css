@@ -243,7 +243,7 @@ a * {
   background-color: var(--mediumSand);
   /* z-index: 100; */
   height: 3.3vh;
-  width: 30vw;
+  width: 29vw;
   position: absolute;
   right: 3vw;
   top: 32vh;
@@ -255,7 +255,7 @@ a * {
   line-height: 4vh;
   letter-spacing: 3px;
   position: absolute;
-  right: 1.5vw;
+  /* right: 1.5vw; */
   top: 29.7vh;
   color: var(--darkteal);
   font-family: var(--BigText);
