@@ -156,7 +156,7 @@
 @media only screen and (max-width: 480px){
 
   .main-image{
-    object-position: 0 -11.5vh !important;
+    object-position: 0 -17.5vh !important;
 
   }
 
@@ -252,8 +252,8 @@ top: 3.7vh !important;
   }
 
   .iAm-stack {
-    font-size:5.5vw;
-    left:.65vw;
+    font-size:5.0vw;
+    left:.95vw;
     top: 1.5vh;
     width:100%;
     letter-spacing: 0;
@@ -275,11 +275,11 @@ top: 3.7vh !important;
   }
 
   .work-block {
-    width: 25vw;
+    width: 23%;
   }
 
   .work-stack {
-    font-size: 4.3vh;
+    font-size: 4.7vh;
   }
   .slides {
     top: 0vh;
@@ -290,12 +290,14 @@ top: 3.7vh !important;
     padding: 0 !important;
     height: 70vh;
     /* display: flex; */
-    left: -0.8vw;
+    /* left: 2vw; */
     margin: 2vh 8vw;
     top: -2vh;
     margin-top: 16vh;
   }
-
+.carousel-inner{
+  width: 500px;
+}
   .card-col {
     float: left;
     width: 100vw;
@@ -310,7 +312,7 @@ top: 3.7vh !important;
   }
 
   .card-title {
-    font-size: 1.8vh !important;
+    font-size: 2.5vh !important;
     text-align: center;
   }
 
@@ -334,16 +336,16 @@ top: 3.7vh !important;
   }
 
   .left {
-    display: none;
+    display: block;
   }
 
   .btn,
   .btn-md {
-    width: 5vw;
-    margin: 0 5vw;
+    width: 60px;
+    margin: 20px 10px;
     position: relative;
-    bottom: 0;
-    left: 2.2vw;
+    
+    left: 6%;
 
     /* color: var(--darkteal) !important */
   }
@@ -509,6 +511,8 @@ top: 3.7vh !important;
   /* -----Footer----- */
   .footer-container {
     height: 15vh;
+    position: relative ;
+    bottom : -150px; 
   }
 
   .copy-left,
@@ -655,7 +659,7 @@ top: 3.7vh !important;
     height: 65vh;
     margin: 0;
     top: 0;
-    position: relative;
+    position: relative; 
     display: -webkit-flex;
     display: flex;
     justify-content: center;

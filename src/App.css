@@ -661,7 +661,7 @@ button {
   height: 20vh;
   margin: 0vw;
   padding: 2vh 2vw;
-  position: absolute;
+  /* position: absolute; */
   display: inline-flex;
 }
 
