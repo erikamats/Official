@@ -216,6 +216,16 @@ a * {
   color: white;
 }
 
+
+@media only screen and (max-width: 375px){
+
+  .main-image {
+    
+    object-position: 0 -80px !important;
+}
+
+}
+
 /* ----Home---- */
 .home-header {
   height: 84.5vh;

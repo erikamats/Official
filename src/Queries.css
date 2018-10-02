@@ -153,6 +153,35 @@
   animation-iteration-count: 1;
 }
 
+
+@media only screen and (max-width: 376px){
+
+  .main-image {
+    object-position: 0 -80px;
+}
+
+.iAm-stack {
+  font-size: 4.2vw;
+  left: .75vw;
+  top: 2.0vh;
+  width: 100%;
+  letter-spacing: 0;
+}
+
+.btn.btn-md {
+  padding: .1rem 1.3rem;
+  width: 50px;
+  margin: 30px 7px;
+}
+
+.footer-container{
+  bottom : -40px; 
+  position: relative;
+  height: 15vh;
+}
+
+}
+
 @media only screen and (max-width: 480px){
 
   .main-image{
