@@ -162,14 +162,17 @@
 
 .btn{
   display: inline-block;
+
 }
 
-.btn,.btn-md{
-  padding: 0.1rem 1rem;
+.btn.btn-md{
+  padding: .1rem 1.3rem;
+  width:50px;
+  margin: 8px 10px;
 }
 
  .btn-md {
-  width: 30vw !important;
+  /* width: 30vw !important; */
   margin: 0 5vw;
   position: relative;
   bottom: 0;
