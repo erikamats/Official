@@ -4,21 +4,22 @@ class About extends React.Component {
     return (
       <div className="about-container col-12">
         <div className="col-2 iAm-label">
-          <p className="iAm-stack">
+          <p className="iAm-stack ">
             I am{" "}
-            <span
+            
+            {/* <span
               className="
         dots"
             >
               ...
-            </span>
+            </span> */}
           </p>
           <div className="iAm-block" />
         </div>
 
         <div className="iAm-merp col-9">
         <p>
-        I am a Full Stack Web Developer living in Austin, Texas. I recently took a proud leap into web development to pursue something that I genuinely enjoy and is thrilling!
+        <span className="small-dont"> I am</span> <span className="dots">Erika Matsumoto, </span> a Full Stack Web Developer living in Austin, Texas. I recently took a proud leap into web development to pursue something that I genuinely enjoy and is thrilling!
         </p>
         <p>
           {" "}

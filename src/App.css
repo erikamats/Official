@@ -23,7 +23,7 @@
 .spinner {
   position: absolute;
   top: 48%;
-  left: 48%;
+  left: 48vw;
   width: 50px;
   height: 50px;
   /* position: relative; */
@@ -217,14 +217,7 @@ a * {
 }
 
 
-@media only screen and (max-width: 375px){
 
-  .main-image {
-    
-    object-position: 0 -80px !important;
-}
-
-}
 
 /* ----Home---- */
 .home-header {
@@ -414,6 +407,10 @@ a * {
   margin-top: 16vh;
 }
 
+.card-text{
+  overflow: scroll;
+}
+
 .card-col {
   width: 33.33%;
   float: left;
@@ -479,7 +476,7 @@ button {
 .btn:focus,
 .btn:active {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.05);
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
@@ -506,6 +503,7 @@ button {
   height: 85%;
   width: 16.66%;
   margin-top: 4vh;
+  left: 3vw;
 }
 
 .contact-block {
@@ -595,7 +593,7 @@ button {
   font-size: 1vh;
   height: 100%;
   padding: 5vh 0;
-  margin-left: 0vw !important;
+
   margin: 0 auto;
   width: 33.33%;
 }
@@ -639,10 +637,10 @@ button {
 .form-btn:active {
   background-image: linear-gradient(0deg, var(--sand) 0%, var(--tan) 80%);
 }
-.touch {
+/* .touch {
   float: right;
   position: relative;
-  /* border: 2px solid greenyellow; */
+
   height: 52.55vh;
   padding-top: 3.1vw;
   right: 4vw;
@@ -653,7 +651,7 @@ button {
   font-family: var(--BigText);
   line-height: 5vh;
   margin-top: 4vh;
-}
+}  */
 
 .merp {
   line-height: 4vh;
