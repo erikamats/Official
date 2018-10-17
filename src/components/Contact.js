@@ -6,11 +6,14 @@ import { FaGithubSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { MdStreetview, MdContactMail, MdModeComment } from "react-icons/md";
 import { IoMdPaperPlane } from "react-icons/io";
 
-
 class Contact extends React.Component {
   render() {
     return (
-      <div className="contact-container col-12">
+      <div
+        className="contact-container col-12"
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
         <div className="contact-label">
           <div className="contact-block" />
           <p className="contact-stack">Contact</p>
@@ -46,7 +49,6 @@ class Contact extends React.Component {
           </div>
         </div>
 
-        
         <div className="contact-form">
           <form
             action="https://formspree.io/erikacodes@gmail.com"
@@ -70,9 +72,9 @@ class Contact extends React.Component {
             </Input>
 
             <Row>
-              <Col s={3} m={3} l={2} />
-              <Col s={3} m={3} l={2} />
-              <Col s={6} m={6} l={8} className="center">
+             
+              <Col   xs={3} s={3} m={3} l={2} />
+              <Col xs={8} s={6} m={6} l={8} className="center">
                 <button
                   type="submit"
                   value="Send"
@@ -81,18 +83,22 @@ class Contact extends React.Component {
                   Send <IoMdPaperPlane />
                 </button>
               </Col>
-              
+              <Col   xs={1} s={3} m={3} l={2} />
             </Row>
           </form>
         </div>
-
-       
 
         <div className="touch ">
           <h2 className="contact-reach">Get in Touch!</h2>
 
           <h5 className="merp">
-            Whether you want to say  <span className="hi hvr-buzz-out">  hi  </span>  or you'd like to share your feedback, I'd love to hear from you!
+            Whether you want to say{" "}
+            <span className="hi wobble"> hi </span> or you'd like to share
+            your feedback, 
+            <br/>
+            <br/>
+            <br/>
+            I'd love to hear from you!
           </h5>
         </div>
       </div>
@@ -100,116 +106,3 @@ class Contact extends React.Component {
   }
 }
 export default Contact;
-
-/* <div id="main-contact">
-<Menu />
-
-<div id="main_content">
-  <Row>
-    <Col className="touch" m={12} l={5} s={12}>
-      <div className="touch">
-        <h2>Get in Touch!</h2>
-        <h4 className="touchline"> I'd love to hear from you!</h4>
-      </div>
-
-      <div className="contact-info " >
-        <h3> Erika Matsumoto</h3>
-        <p> Austin, Texas </p>
-
-        <span>(512) 813-0589 </span>
-
-        <div id="social fade fade_ani">
-        <div
-          className="fab github"
-          onClick={() => window.open("https://github.com/erikamats ")}
-        >
-          <FaGithubSquare className="exp github " />
-        </div>
-
-        <div
-          className="fab instagram"
-          onClick={() => window.open("https://instagram./erikamats ")}
-        >
-          <FaInstagram className="exp instagram " />
-        </div>
-
-        <div
-          className="fab linkedIn"
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/erikamatsumoto/")
-          }
-        >
-          <FaLinkedinIn className="linkedIn exp" />
-        </div>
-      </div>
-      </div>
-
-      
-    </Col>
-
-    <Col className="contact-form" m={12} l={7} s={12}>
-      <form
-        action="https://formspree.io/erikacodes@gmail.com"
-        method="POST"
-      >
-        <Input
-          l={6}
-          m={6}
-          s={12}
-          label="First Name"
-          name="first-name"
-          validate
-        >
-         <MdStreetview/>
-        </Input>
-
-        <Input l={6} m={6}  s={12} label="Last Name" name="last-name" validate>
-        <MdStreetview/>
-        </Input>
-
-        <Input
-          type="email"
-          name="email"
-         label="Your Email"
-         l={6} m={6}
-          s={12}
-          validate
-        >
-        <MdContactMail/>
-        </Input>
-
-        <Input
-          s={12}
-          l={6} m={6}
-          label="Telephone"
-          name="phoneNumber"
-          validate
-          type="tel"
-        >
-          <MdPhoneInTalk/>
-        </Input>
-
-        <Input
-    
-          s={12}
-          type="textarea"
-          name="message"
-          label="Shoot me a message!"
-        >
-          <MdModeComment/>
-        </Input>
-
-        <Row>
-          <Col s={3} m={3} l={3} />
-          <Col s={6} m={6} l={6} className="center">
-            <Button type="submit" value="Send" className="form-btn">
-              Send an Email!
-            </Button>
-          </Col>
-          <Col s={3} m={3} l={3}/>
-        </Row>
-      </form>
-    </Col>
-    </Row>
-</div>
-</div> */

@@ -9,7 +9,46 @@ const Home = () => (
         className="main-image .col-12"
         alt="erika"
       />
-      <div className="block" /> <p className="stack">Full Stack Developer</p>
+      <div className="block" />
+      <div className="stack">
+        <span
+          className="stacks top"
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+         
+        >
+          Let the beauty of what you love
+        </span>
+
+        <span
+          className="stacks middle"
+          data-aos="fade-left"
+          data-aos-delay="100"
+          data-aos-duration="2500"
+
+    
+        >
+          {" "}
+          be what you do.{" "}
+        </span>
+
+        <span
+          className="stacks smaller"
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="3000"
+        >
+          --Rumi
+        </span>
+      </div>
+
+      <p />
+      <img
+        src={require("../images/favicon.ico")}
+        className=" logito"
+        alt="logoito"
+      />
     </div>
   </div>
 );

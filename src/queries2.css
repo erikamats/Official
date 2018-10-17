@@ -1,0 +1,243 @@
+
+@media only screen and (max-width: 321px){
+.navLogo{
+    width: 60%;
+    font-size: 3vh;
+}
+
+ #menu .menuitem:not(.respMenu){
+    display: none;
+    float:right;
+ }
+
+.menuitem.responsive {
+    position: relative;
+    display:block;
+    width:100%;
+    opacity: .5;
+} 
+
+
+.respimg:hover{
+    margin:1px 0 10px 65px;
+    width: 25px;
+    background-color: none;
+
+}
+
+.main-image {
+    object-position: 50%;
+    }
+    
+.about-container{
+    height:90vh;
+    margin: 4vh 0
+    
+}
+.iAm-stack {
+    top: 50%;
+    left:50%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4vh;
+}
+
+.iAm-merp{
+    font-size: 1.8vh;
+}
+
+.iAm-merp p{
+    padding:0 3vw;
+}
+
+
+.work-block{
+    width:62vw;
+}
+
+.card-col {
+    width: 100%;
+}
+.about-container{
+    height: 100vh;
+}
+
+.contact-container{
+    height:100%;
+position: relative;
+display: -webkit-flex;
+display: flex;
+flex-wrap: wrap;
+}
+
+.contact-label,
+.contact-form,
+.touch{
+    width:100%;
+    position:unset;
+}
+
+.contact-label{
+    order: 1;
+
+height: 40vh;
+position: relative;
+-webkit-box-shadow: 2px 7px 40px rgba(72, 70, 70, 0.774);
+    box-shadow: 0px 1px 10px rgba(72, 70, 70, 0.774);
+}
+
+.contact-block {
+    width: 62%;
+    left: 0.5vw;
+}
+.contact-p {
+text-align: center;
+top:30%;
+}
+
+.contact-p > span{
+    font-size: 3vh;
+}
+#social {
+    position: absolute;
+    bottom: 5vh;
+  width:100%;
+ text-align: center;
+   /* border: 1px solid saddlebrown */
+
+}
+
+.exp {
+    padding: 0px 0.3rem;
+    height: 7vw !important;
+    width: 12vw !important;
+    
+  }
+
+  .contact-form{
+    padding: 0vh;
+    order: 3;
+
+  }
+
+  .touch{
+    order: 2;
+    padding: 5% 10% 10% ;
+    height:100%
+
+  }
+
+  button .form-btn{
+      justify-self: center !important;
+      right: 50% !important
+
+  }
+
+  .copy-right{
+    margin: 0 2vw;
+    flex-direction: column;
+
+  }
+
+}
+
+
+
+
+
+
+/* 
+@media only screen and (max-width: 1200px){
+
+.main-image {
+object-position: 50%;
+}
+
+.iAm-stack {
+    top: 42%;
+    left:50%;
+    width: 100%;
+    text-align: center;
+    margin: 20% auto
+}
+.iAm-merp {
+    font-size: 2vh
+}
+
+.work-block {
+    width: 29vw;
+}
+
+.work-stack{
+    font-size: 6vh;
+}
+.contact-label{
+    width: 23vw; 
+}
+
+#social{
+bottom: 20vh;
+padding: 1vw;
+}
+
+.fab {
+    padding-left: .8vw;
+}
+
+.copy-left{
+    margin:0;
+}
+
+.copy-right{
+    margin: 0 -1vw;
+}
+
+.copy-right > span {
+    margin: 0 1.5vw;
+
+}
+
+}
+
+@media only screen and (max-width: 992px){
+.iAm-merp {
+    font-size: 2vh;
+    line-height: 3vh
+}
+.work-block{
+    width: 34vh;
+}
+
+.work-stack{
+font-size: 6vh
+}
+
+}
+@media only screen and (max-width: 769px){
+
+.menu:not(:fourth-child) 
+{display: none;}
+
+
+
+.respMenu{
+    float: right;
+    display: block;
+}
+
+    .about-container{
+    height: 60vh;
+    margin: 8vh 0;
+}
+    .iAm-merp {
+        font-size: 2vh;
+     
+    }
+
+    .work-block{
+        width: 33vh;
+    }
+
+} */
+
