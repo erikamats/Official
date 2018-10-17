@@ -161,10 +161,7 @@ body {
 }
 
 .respMenu{
-  display: block;
-  width: 50px;
-  height: 100%;
-  margin: 1px 0 0;
+  display: none;
 
 }
 
@@ -848,13 +845,13 @@ text-align: center;
 }
 
 .copy-right{
-margin: 0 2vw;
 
+right:2vw;
 justify-content: flex-end;
 
 }
 .copy-right > span {
-  margin: 0 1.5vw;
+  margin: 0 1vw;
   text-align: right;
 
 }
