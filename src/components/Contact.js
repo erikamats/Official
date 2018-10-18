@@ -11,19 +11,19 @@ class Contact extends React.Component {
     return (
       <div
         className="contact-container col-12"
-        data-aos="fade-left"
+        data-aos="fade-up"
         data-aos-duration="3000"
       >
         <div className="contact-label">
           <div className="contact-block" />
           <p className="contact-stack">Contact</p>
+          </div>
+
           <div className="contact-p ">
             <span className="uno"> Erika Matsumoto</span>
             <span className="tres"> Austin, Texas </span>
             <span className="dos">(512) 813-0589 </span>
-          </div>
-
-          <div id="social">
+            <div id="social">
             <div
               className="fab linkedIn"
               onClick={() =>
@@ -72,9 +72,9 @@ class Contact extends React.Component {
             </Input>
 
             <Row>
-             
-              <Col   xs={3} s={3} m={3} l={2} />
-              <Col xs={8} s={6} m={6} l={8} className="center">
+{/*              
+              <Col xs={3} s={3} m={3} l={2} /> */}
+              <Col xs={6} s={6} m={6} l={8} >
                 <button
                   type="submit"
                   value="Send"
@@ -83,23 +83,21 @@ class Contact extends React.Component {
                   Send <IoMdPaperPlane />
                 </button>
               </Col>
-              <Col   xs={1} s={3} m={3} l={2} />
+              {/* <Col   xs={3} s={3} m={3} l={2} /> */}
             </Row>
           </form>
         </div>
 
         <div className="touch ">
-          <h2 className="contact-reach">Get in Touch!</h2>
+          <h3 className="contact-reach">Get in Touch!</h3>
 
-          <h5 className="merp">
+          <p className="merp">
             Whether you want to say{" "}
             <span className="hi wobble"> hi </span> or you'd like to share
             your feedback, 
-            <br/>
-            <br/>
-            <br/>
-            I'd love to hear from you!
-          </h5>
+            <span>   I'd love to hear from you! </span>
+         
+          </p>
         </div>
       </div>
     );

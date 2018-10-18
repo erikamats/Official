@@ -24,18 +24,27 @@ class App extends Component {
     on: false
   };
 
-  showNav = () => {
-    this.setState({
-      on: !this.state.on
-    });
+  // showNav = () => {
+  //   this.setState({
+  //     on: !this.state.on
+  //   });
     
-    const x = document.getElementById("menu");
-    if (x.className === "menuitem") {
-        x.className += "responsive";
-    } else {
-        x.className = "menuitem";
-    }
-  }
+  //   const x = document.getElementById("menu");
+  //   if (x.className === "menuitem") {
+  //       x.className += "responsive";
+  //   } else {
+  //       x.className = "menuitem";
+  //   }
+  // }
+
+  toggleClass() {
+    // const currentState = this.state.on;
+    this.setState({ on: !this.state.on });
+
+
+
+
+};
   componentDidMount() {
     scrollToComponent(this.Home, {
       offset: 0,
