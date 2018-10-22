@@ -19,7 +19,7 @@ class MultiCarouselPage extends Component {
           text:
             "This dynamic web pagevpopulates gifs to describe things I like and enjoy via an API call whilte using Javascript and jQuery.",
           picture:
-            "https://res.cloudinary.com/matsi/image/upload/q_auto/v1537201150/portfolio/Screen_Shot_2018-09-17_at_11.17.40_AM.png",
+            "https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1537201150/portfolio/Screen_Shot_2018-09-17_at_11.17.40_AM.png",
           deployed: "https://erikamats.github.io/Giphy/",
           github: "https://github.com/erikamats/Giphy"
         },
@@ -28,7 +28,7 @@ class MultiCarouselPage extends Component {
           text:
             "Inspired by one of my favorite shows, this memory game manages component state and responds to user events. ",
           picture:
-            "https://res.cloudinary.com/matsi/image/upload/q_auto/v1537201477/portfolio/Screen_Shot_2018-09-17_at_11.23.56_AM.png",
+            "https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1537201477/portfolio/Screen_Shot_2018-09-17_at_11.23.56_AM.png",
           deployed: "https://daria-game.now.sh/",
           github: "https://github.com/erikamats/cliquey"
         },
@@ -37,7 +37,7 @@ class MultiCarouselPage extends Component {
           text:
             " In Progress: Group project website for nonprofit in efforts to bring more awareness to ongoing protests in Nicaragua. ",
           picture:
-            "https://res.cloudinary.com/matsi/image/upload/q_auto/v1539585507/freenicalogo.png ",
+            "https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1539585507/freenicalogo.png ",
           deployed: "http://freenica.herokuapp.com/",
           github: "https://github.com/kevinepena/Nicalibre"
         },
@@ -47,7 +47,7 @@ class MultiCarouselPage extends Component {
           text:
             "This application incorporates Firebase to host arrival and departure data. The app retrieves and manipulates information using Moment.js  ",
           picture:
-            "https://res.cloudinary.com/matsi/image/upload/q_auto/v1539715980/Screen_Shot_2018-10-16_at_1.52.37_PM.png",
+            "https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1539715980/Screen_Shot_2018-10-16_at_1.52.37_PM.png",
           deployed: "https://erikamats.github.io/TrainActivity/",
           github: "https://github.com/erikamats/TrainActivity"
         },
@@ -56,7 +56,7 @@ class MultiCarouselPage extends Component {
           text:
             "  First mobile-responsive layout using media queries for a dummy portfolio using HTML, CSS, GitHub and GitHub Pages. ",
           picture:
-            "https://res.cloudinary.com/matsi/image/upload/q_auto/v1537290797/portfolio/Screen_Shot_2018-09-18_at_12.12.34_PM.png",
+            "https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1537290797/portfolio/Screen_Shot_2018-09-18_at_12.12.34_PM.png",
           deployed:
             "https://erikamats.github.io/Bootstrap-Portfolio/index.html",
           github: "https://github.com/erikamats/Responsive-Portfolio"
@@ -66,7 +66,7 @@ class MultiCarouselPage extends Component {
           text:
             " Similar to hangman, guess the baby product at play pressing on any letter of your choice! You lose the round if you exhaust all of your 5 guesses! ",
           picture:
-            " https://res.cloudinary.com/matsi/image/upload/q_auto/v1537201153/portfolio/Screen_Shot_2018-09-17_at_11.18.27_AM.png",
+            " https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1537201153/portfolio/Screen_Shot_2018-09-17_at_11.18.27_AM.png",
           deployed: " https://erikamats.github.io/Word-Guess-Name/",
           github: "https://github.com/erikamats/Word-Guess-Name"
         }
