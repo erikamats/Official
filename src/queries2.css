@@ -42,6 +42,7 @@
   .stacks {
     font-size: 4.5vw;
     background-image: linear-gradient(to left, #d5c4b1ec, transparent);
+    background-image: linear-gradient(to left, #d5c4b1ec, rgba(255,255,255,0));
     line-height: 3vw;
     margin: 0;
     padding: 0 20px 0 0;
