@@ -7,15 +7,16 @@ class About extends React.Component {
         data-aos="fade-left"
         data-aos-duration="2500"
       >
-        <div className="col-2 iAm-label">
+        {/* <div className="col-2 iAm-label">
           <p className="iAm-stack ">I am</p>
-          {/* <div className="iAm-block" /> */}
-        </div>
+          <div className="iAm-block" />
+        </div> */}
 
-        <div className="iAm-merp col-10">
+        <div className="iAm-merp col-12">
+          <h1> I am...</h1>
+        
           <p>
-            <span className="small-dont"> I am</span>{" "}
-            <span className="dots">Erika Matsumoto, </span> a Full Stack Web
+           <span className="dots">Erika Matsumoto, </span> a Full Stack Web
             Developer living in Austin, Texas. I recently took a proud leap into
             web development to pursue something that I genuinely enjoy and find
             thrilling!

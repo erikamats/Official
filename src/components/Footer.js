@@ -16,27 +16,27 @@ class Footer extends React.Component {
         </div>
 
         <div className="copy-middle col-4">
-          <div
+          <span
             className="fab github"
             onClick={() => window.open("https://github.com/erikamats ")}
           >
             <FaGithub className="exp github " />
-          </div>
+          </span>
 
-          <div
+          <span
             className="fab linkedIn"
             onClick={() =>
               window.open("https://www.linkedin.com/in/erikamatsumoto/")
             }
           >
             <FaLinkedinIn className="linkedIn exp" />
-          </div>
-          <div
+          </span>
+          <span
             className="fab instagram"
             onClick={() => window.open("https://www.instagram.com/maaatsiii/")}
           >
             <FaInstagram className="exp instagram " />
-          </div>
+          </span>
         </div>
 
         <div className="copy-right col-4">

@@ -1,25 +1,20 @@
-// import { BrowserRouter, Route, Switch } from "react-router-dom";
-// import NotFound from "./components/NotFound";
-// import ContactPage from "./components/Contact2";
-// import Footer from "./components/Footer";
-// import Menu from "./components/Menu";
 import React, { Component } from "react";
 import * as moment from "moment";
+import scrollToComponent from "react-scroll-to-component-ssr";
+import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
 import Home from "./components/Home";
 import About from "./components/About";
 import MultiCarouselPage from "./components/MultiCarouselPage";
 import Contact from "./components/Contact";
-import scrollToComponent from "react-scroll-to-component-ssr";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 import "./App.css";
 import "./keyframes.css";
 import "./queries2.css";
-// import "./Queries.css";
+
 let now = moment().format("YYYY");
 
 class App extends Component {
-
   state = {
     on: false
   };
@@ -28,7 +23,7 @@ class App extends Component {
   //   this.setState({
   //     on: !this.state.on
   //   });
-    
+
   //   const x = document.getElementById("menu");
   //   if (x.className === "menuitem") {
   //       x.className += "responsive";
@@ -40,11 +35,7 @@ class App extends Component {
   toggleClass() {
     // const currentState = this.state.on;
     this.setState({ on: !this.state.on });
-
-
-
-
-};
+  }
   componentDidMount() {
     scrollToComponent(this.Home, {
       offset: 0,
@@ -74,7 +65,6 @@ class App extends Component {
           </h2>
 
           <div id="menu">
-      
             <div
               className="menuitem"
               onClick={() =>
@@ -115,8 +105,7 @@ class App extends Component {
               Contact
             </div>
 
-            <div className="menuitem respMenu" 
-            onClick={this.showNav}>
+            <div className="menuitem respMenu" onClick={this.showNav}>
               <img
                 src={require("../src/images/favicon.ico")}
                 className=" respimg"
@@ -161,10 +150,12 @@ class App extends Component {
           >
             <Contact />
           </section>
+        </div>
 
-          <div className="footer-container col-12 ">
-            <div
-              className="copy-left col-4"
+        <div className="footer-container col-12 ">
+
+            <div className="copy-left">
+            <span
               onClick={() =>
                 scrollToComponent(this.Home, {
                   duration: 2000,
@@ -172,79 +163,74 @@ class App extends Component {
                 })
               }
             >
-              <span className="copyright">
-                Copyright © {now} Erika Matsumoto
-              </span>
-            </div>
+              {" "}
+              Home
+            </span>
+           
+            <span
+              onClick={() =>
+                scrollToComponent(this.About, {
+                  align: "top",
+                  duration: 1000,
+                  ease: "inOutBack"
+                })
+              }
+            >
+              {" "}
+              About
+            </span>
+          
+            <span
+              onClick={() =>
+                scrollToComponent(this.MCP, {
+                  offset: 700,
+                  align: "top",
+                  duration: 1500,
+                  ease: "inOutBack"
+                })
+              }
+            >
+              {" "}
+              Work
+            </span>
+          </div>
+          <div className="copy-middle ">
+            <span
+              className="github"
+              onClick={() => window.open("https://github.com/erikamats ")}
+            >
+              {" "}
+              <FaGithub className="exp github " />
+            </span>
 
-            <div className="copy-middle col-4">
-              <div
-                className="fab github"
-                onClick={() => window.open("https://github.com/erikamats ")}
-              >
-                <FaGithub className="exp github " />
-              </div>
+            <span
+              className=" linkedIn"
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/erikamatsumoto/")
+              }
+            >
+              <FaLinkedinIn className="linkedIn exp" />
+            </span>
+            <span
+              className=" instagram"
+              onClick={() =>
+                window.open("https://www.instagram.com/maaatsiii/")
+              }
+            >
+              <FaInstagram className="exp instagram " />
+            </span>
+          </div>
 
-              <div
-                className="fab linkedIn"
-                onClick={() =>
-                  window.open("https://www.linkedin.com/in/erikamatsumoto/")
-                }
-              >
-                <FaLinkedinIn className="linkedIn exp" />
-              </div>
-              <div
-                className="fab instagram"
-                onClick={() =>
-                  window.open("https://www.instagram.com/maaatsiii/")
-                }
-              >
-                <FaInstagram className="exp instagram " />
-              </div>
-            </div>
-
-            <div className="copy-right col-4">
-              <span
-                onClick={() =>
-                  scrollToComponent(this.Home, {
-                    duration: 2000,
-                    ease: "inOutBack"
-                  })
-                }
-              >
-                {" "}
-                Home
-              </span>
-              <span
-                onClick={() =>
-                  scrollToComponent(this.About, {
-                    align: "top",
-                    duration: 1000,
-                    ease: "inOutBack"
-                  })
-                }
-              >
-                {" "}
-                About
-              </span>
-              <span
-                onClick={() =>
-                  scrollToComponent(this.MCP, {
-                    offset: 700,
-                    align: "top",
-                    duration: 1500,
-                    ease: "inOutBack"
-                  })
-                }
-              >
-                {" "}
-                Work
-              </span>
-              {/* <span  className="footer-contact" onClick={() => scrollToComponent(this.Contact)}>
-                {" "}
-                Contact
-              </span> */}
-            </div>
+          <div
+            className="copy-right copyright"
+            onClick={() =>
+              scrollToComponent(this.Home, {
+                duration: 2000,
+                ease: "inOutBack"
+              })
+            }
+          >
+            Copyright © {now} Erika Matsumoto
           </div>
         </div>
       </main>

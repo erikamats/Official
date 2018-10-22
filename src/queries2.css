@@ -1,3 +1,36 @@
+@media (min-width: 1300px) {
+  #nav > #menu{
+    width: 25vw
+  }
+  
+  .slides > .sliderow > .card-col > .card {
+    margin: 1% 5%;
+    width: 100%;
+  }
+  .copy-middle > span > .exp {
+    height: 3vh !important;
+  }
+
+}
+
+@media (min-width: 1057px) {
+  .sliderow > .card-col {
+    width: 37%;
+    margin: 1% 1.5%;
+  }
+
+  .copy-middle > span > .exp {
+    width: 2vw !important;
+  }
+
+  .contact-container > .touch {
+    margin: 18vh 0 !important;
+  }
+  .contact-container > .touch > .merp {
+    margin: 24% auto;
+  }
+}
+
 @media (min-width: 992px) {
   #imgcontainer > .stack {
     width: 40%;
@@ -38,16 +71,28 @@
     font-size: 2.5vh;
   }
 
+  .sliderow {
+    margin: 0 10%;
+    width: 100%;
+  }
+
   .card-col {
-    width: 33%;
+    width: 36%;
+    margin: 20px;
+    padding: 0;
   }
   .card-col > .card {
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
   }
 
+  .btn.btn-md {
+    padding: 0.7rem 0.6rem;
+    /* font-size: 0.7rem; */
+  }
+
   .contact-container {
-    margin: 1vh auto;
+    margin: 0vh auto 8vh;
     position: relative;
     height: 60vh;
     display: inline-block;
@@ -90,16 +135,15 @@
   .contact-p {
     position: absolute;
     text-align: right;
-    width: 16.66%;
+    width: 18.66%;
     letter-spacing: 1.5px;
-    top: 18vh;
+    top: 21vh;
     left: 0;
     display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    /* border: 1px solid pink; */
   }
 
   .contact-p > span {
@@ -128,14 +172,14 @@
 
   .contact-p > #social {
     position: relative;
-    right: -2.2vw;
+    right: -4.2vw;
     top: -3vh;
     text-align: right;
   }
 
-  .exp {
+  .fab > .exp {
     height: 1.8vw !important;
-    width: 1.8vw !important;
+    width: 3vw !important;
     margin: 0;
   }
 
@@ -147,8 +191,6 @@
   }
 
   .contact-container > .contact-form {
-    /* border: 2px solid pink; */
-
     height: 100%;
     width: 50%;
     padding: 12vh 1vw 0;
@@ -156,18 +198,10 @@
 
     font-size: 1vh;
     position: relative;
-    left: 23%;
-
-    /* border: 1px solid red; */
+    left: 24.5%;
   }
 
-  .input-field .prefix ~ input,
-  .input-field .prefix ~ textarea {
-    width: 40vw;
-    padding: 10px;
-  }
-
-  .contact-form > .form-btn {
+  .row.col > .form-btn {
     /* background-color: var(--mediumSand); */
     background-image: linear-gradient(180deg, var(--sand) 0%, var(--tan) 80%);
     color: var(--darkteal);
@@ -176,11 +210,7 @@
     line-height: 1vw;
     /* letter-spacing: 2px; */
     padding: 0;
-    margin: 0;
-    border-radius: 3px;
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
+    left: 0;
   }
 
   .form-btn:active {
@@ -202,7 +232,6 @@
     position: absolute;
     right: 0;
     display: block;
-    /* border: 1px solid blueviolet; */
   }
 
   .touch > .contact-reach {
@@ -225,30 +254,6 @@
     position: absolute;
     padding: 0 11%;
   }
-  .footer-container > .copy-middle {
-    top: 0;
-    padding: 7.5vh 0 0;
-    align-content: flex-start;
-    left: 2vw;
-  }
-
-  .copy-middle > .fab > .exp {
-    height: 2.5vw !important;
-    width: 2.5vw !important;
-}
-
-  .footer-container >.copy-middle > .fab > .exp {
-    padding: 0px .4vw 0;
-}
-
-.footer-container > .copy-right {
-    top: 0;
-    padding: 7.5vh 0 0;
-    align-content: flex-end;
-    right: 2vw;
-    
-  }
-
 }
 
 @media (min-width: 730px) {
@@ -282,10 +287,9 @@
     font-size: 2vh;
     line-height: 5vh;
     color: var(--darkteal);
-    justify-content: center;
-    display: flex;
-    flex-wrap: nowrap;
-    flex: 1;
+    float: right;
+    text-align: center;
+    display: block;
   }
   .menuitem:hover {
     background-color: var(--sand);
@@ -313,8 +317,8 @@
     height: 75vh;
   }
 
-  .iAm-stack {
-    top: 47%;
+  .iAm-merp {
+    font-size: 2.3vh;
   }
 
   .work-block {
@@ -324,6 +328,9 @@
   .card {
     width: 70%;
     margin: 5% 15%;
+  }
+  .d-md-block {
+    display: inherit;
   }
 
   .contact-label {
@@ -351,7 +358,20 @@
   .contact-form {
     padding: 3% 14%;
     order: 3;
-    left: -3vw;
+    left: 0vw;
+  }
+
+  .input-field.col label {
+    left: 1rem;
+  }
+
+  .input-field .prefix ~ label {
+    margin-left: 3rem;
+  }
+
+  .input-field.col .prefix ~ input,
+  .input-field.col .prefix ~ textarea {
+    width: calc(100% - 3rem - 1rem);
   }
 
   .touch {
@@ -363,47 +383,16 @@
   .form-btn {
     justify-self: right !important;
     font-size: 2vh;
-    margin: 0 37%;
+    margin: 0 33.5%;
   }
+}
 
-  .copy-left,
-  .copy-middle,
-  .copy-right {
-    position: relative;
-    display: flex;
-    align-content: center;
-    height: auto;
+@media (min-width: 576px) {
+  .card,
+  .view {
+    max-width: 502px;
   }
-
-  .copy-left {
-    order: 3;
-    /* border: 1px solid red; */
-    margin: 0;
-  }
-
-  .copy-middle {
-    order: 1;
-
-    top: 30%;
-    flex-direction: column;
-
-    margin: 0;
-  }
-  .copy-middle > .fab > .exp {
-    padding: 0 0.5vw;
-  }
-
-  .copy-right {
-    /* border: 1px solid red; */
-    align-content: flex-end;
-    text-align: right;
-    flex-direction: column;
-    top: 39%;
-    order: 3;
-  }
-
-  .copy-right > span {
-    font-size: 1.9vh;
-    flex: 0 0 100%;
+  .d-sm-block {
+    display: inherit;
   }
 }
