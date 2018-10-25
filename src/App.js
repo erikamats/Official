@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 
 import "./App.css";
 import "./keyframes.css";
-import "./queries2.css";
+import "./queries.css";
 
 let now = moment().format("YYYY");
 
