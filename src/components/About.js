@@ -30,7 +30,7 @@ class About extends React.Component {
             <br />
             <br />
             When I am not coding, I enjoy spending time with my sisters and
-            friends. I enjoy listening to jazz and playing with makeup. I find fashion to be major creative outlet for me and I like doing my research for new trends; plus... it's a great confidence booster - it makes me feel like I can conquer just about anything! One thing that I want to incorporate into my free time is reading for fun and it being non-coding related!
+            friends. I enjoy listening to jazz and playing with makeup. I find fashion to be major creative outlet for me and I like doing my research for new trends; plus... it's a great confidence booster! 
           </p>
         </div>
         {/* <div className="col-2 iAm-label"/> */}
