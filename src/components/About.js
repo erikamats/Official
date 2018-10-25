@@ -7,10 +7,7 @@ class About extends React.Component {
         data-aos="fade-left"
         data-aos-duration="2500"
       >
-        {/* <div className="col-2 iAm-label">
-          <p className="iAm-stack ">I am</p>
-          <div className="iAm-block" />
-        </div> */}
+
 
         <div className="iAm-merp col-12">
           <h1> I am...</h1>
@@ -33,7 +30,7 @@ class About extends React.Component {
             friends. I enjoy listening to jazz and playing with makeup. I find fashion to be major creative outlet for me and I like doing my research for new trends; plus... it's a great confidence booster! 
           </p>
         </div>
-        {/* <div className="col-2 iAm-label"/> */}
+  
       </div>
     );
   }
