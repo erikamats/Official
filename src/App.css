@@ -297,7 +297,7 @@ a * {
 
 .slides {
   /* background-color: #596e79; */
-  margin: 5vh auto;
+  margin: 0vh auto;
   z-index: -50;
   position: relative;
   height: 100%;

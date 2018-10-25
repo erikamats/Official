@@ -80,7 +80,7 @@ class MultiCarouselPage extends Component {
         data-aos="fade-right"
         data-aos-duration="2500"
       >
-       <h1 className="white"> Projects </h1>
+       <h1> Projects </h1>
 
        
         <div className="sliderow"

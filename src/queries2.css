@@ -13,7 +13,11 @@
 
 }
 
-@media (min-width: 1057px) {
+@media (min-width: 1054px) {
+
+.slides{
+    margin: 0 auto 8vh;
+  }
   .sliderow > .card-col {
     width: 37%;
     margin: 1% 1.5%;
@@ -259,7 +263,7 @@
 
 @media (min-width: 730px) {
   #nav {
-    height: 6vh;
+    height: 4vh;
     max-height: 6vh;
     transition: 0.2s;
   }
@@ -307,7 +311,8 @@
   }
 
   .main-image {
-    object-position: 53%;
+    object-position: 1 100%;
+    left:0;
   }
 
   .logito {
