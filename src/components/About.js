@@ -27,7 +27,7 @@ class About extends React.Component {
             <br />
             <br />
             When I am not coding, I enjoy spending time with my sisters and
-            friends. I enjoy listening to jazz and playing with makeup. I find fashion to be major creative outlet for me and I like doing my research for new trends; plus... it's a great confidence booster! 
+            friends. I enjoy listening to jazz and playing with makeup. I find fashion to be major creative outlet for me and I like doing my research for new trends; plus... it's a great confidence booster! One of my goals is to read more for fun! If you have any recommendations, feel free to share them with me!
           </p>
         </div>
   

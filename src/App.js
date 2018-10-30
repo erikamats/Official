@@ -15,33 +15,16 @@ import "./queries.css";
 let now = moment().format("YYYY");
 
 class App extends Component {
-  state = {
-    on: false
-  };
-
-  // showNav = () => {
-  //   this.setState({
-  //     on: !this.state.on
-  //   });
-
-  //   const x = document.getElementById("menu");
-  //   if (x.className === "menuitem") {
-  //       x.className += "responsive";
-  //   } else {
-  //       x.className = "menuitem";
-  //   }
-  // }
-
-  toggleClass() {
-    // const currentState = this.state.on;
-    this.setState({ on: !this.state.on });
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
   }
+  
   componentDidMount() {
     scrollToComponent(this.Home, {
-      offset: 0,
-      align: "bottom",
-      duration: 2000,
-      ease: "inOutBounce"
+     duration: 2000,
+     offset: -60
+
     });
   }
 

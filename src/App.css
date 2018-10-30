@@ -27,7 +27,7 @@
   left: 48%;
   width: 50px;
   height: 50px;
-  /* position: relative; */
+
 }
 
 .cube1,
@@ -185,6 +185,7 @@ a * {
 
 #imgcontainer {
   height: 100%;
+
 }
 
 .main-image {
@@ -219,7 +220,7 @@ a * {
   line-height: 7vw;
   letter-spacing: 0.1vw;
   font-family: var(--quote);
-  color: var(--darkteal);
+  color: var(--darkteal); 
    margin: 0;
   padding: 0;
   flex: 0 0 100%;
@@ -242,14 +243,13 @@ a * {
 }
 
 .logito {
-  justify-content: center;
-  margin: 1% 45vw;
+margin: 1% 50%;
   bottom: 0;
   position: absolute;
   max-width: 50px;
   max-height: 50px;
   width: 20px;
-  /* height: 5vw; */
+
   opacity: 0.65;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;

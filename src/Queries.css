@@ -1,8 +1,8 @@
 @media (min-width: 1300px) {
-  #nav > #menu{
-    width: 25vw
+  #nav > #menu {
+    width: 25vw;
   }
-  
+
   .slides > .sliderow > .card-col > .card {
     margin: 1% 5%;
     width: 100%;
@@ -10,12 +10,10 @@
   .copy-middle > span > .exp {
     height: 3vh !important;
   }
-
 }
 
 @media (min-width: 1054px) {
-
-.slides{
+  .slides {
     margin: 0 auto 8vh;
   }
   .sliderow > .card-col {
@@ -46,7 +44,11 @@
   .stacks {
     font-size: 4.5vw;
     background-image: linear-gradient(to left, #d5c4b1ec, transparent);
-    background-image: linear-gradient(to left, #d5c4b1ec, rgba(255,255,255,0));
+    background-image: linear-gradient(
+      to left,
+      #d5c4b1ec,
+      rgba(255, 255, 255, 0)
+    );
     line-height: 3vw;
     margin: 0;
     padding: 0 20px 0 0;
@@ -68,6 +70,13 @@
     display: inline-block;
     margin-bottom: 0;
   }
+
+.logito{
+margin: 0 49%;
+border: 1px solid red;
+
+}
+
 
   .iAm-stack {
     width: auto;
@@ -312,12 +321,10 @@
 
   .main-image {
     object-position: 1 100%;
-    left:0;
+    left: 0;
   }
 
-  .logito {
-    margin: 1% 49%;
-  }
+
 
   .about-container {
     height: 75vh;
@@ -334,7 +341,9 @@
   .card {
     width: 70%;
     margin: 5% 15%;
+    height: inherit
   }
+
   .d-md-block {
     display: inherit;
   }

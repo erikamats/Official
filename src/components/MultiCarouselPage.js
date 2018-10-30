@@ -33,6 +33,14 @@ class MultiCarouselPage extends Component {
           github: "https://github.com/erikamats/cliquey"
         },
         {
+          title: "keiMatsumotoMedia",
+          text: "In Progress: Full development of keiMatsumoto website/portfolio",
+          picture: "https://res.cloudinary.com/matsi/image/upload/v1540873074/portfolio/keiMatsMedia.png",
+          deployed: "https://keimatsumotomedia.herokuapp.com",
+          github:"https://bitbucket.org/erikamats/keimatsumotomedia/src"
+
+        },
+        {
           title: "FreeNica",
           text:
             " In Progress: Group project website for nonprofit in efforts to bring more awareness to ongoing protests in Nicaragua. ",
@@ -69,6 +77,13 @@ class MultiCarouselPage extends Component {
             " https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1537201153/portfolio/Screen_Shot_2018-09-17_at_11.18.27_AM.png",
           deployed: " https://erikamats.github.io/Word-Guess-Name/",
           github: "https://github.com/erikamats/Word-Guess-Name"
+        },
+        {
+          title: "Lots more is underway!",
+          text: "Please come back soon to check it out!",
+          picture: "https://res.cloudinary.com/matsi/image/upload/v1540873646/portfolio/comingsoon.jpg",
+          deployed: "#",
+          github:"#"
         }
       ]
     };
