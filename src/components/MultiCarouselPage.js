@@ -19,7 +19,7 @@ class MultiCarouselPage extends Component {
           text:
             "This dynamic web pagevpopulates gifs to describe things I like and enjoy via an API call whilte using Javascript and jQuery.",
           picture:
-            "https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1537201150/portfolio/Screen_Shot_2018-09-17_at_11.17.40_AM.png",
+            "https://res.cloudinary.com/matsi/image/upload/v1540961646/optimized%20portfolio/zoanypcrq5zaw77sxl6r.png",
           deployed: "https://erikamats.github.io/Giphy/",
           github: "https://github.com/erikamats/Giphy"
         },
@@ -28,14 +28,14 @@ class MultiCarouselPage extends Component {
           text:
             "Inspired by one of my favorite shows, this memory game manages component state and responds to user events. ",
           picture:
-            "https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1537201477/portfolio/Screen_Shot_2018-09-17_at_11.23.56_AM.png",
+            "https://res.cloudinary.com/matsi/image/upload/v1540961645/optimized%20portfolio/cwsnmioptn4kbgmbr4t1.png",
           deployed: "https://daria-game.now.sh/",
           github: "https://github.com/erikamats/cliquey"
         },
         {
           title: "keiMatsumotoMedia",
           text: "In Progress: Full development of keiMatsumoto website/portfolio",
-          picture: "https://res.cloudinary.com/matsi/image/upload/v1540873074/portfolio/keiMatsMedia.png",
+          picture: "https://res.cloudinary.com/matsi/image/upload/v1540961645/optimized%20portfolio/keiMatsMedia.png",
           deployed: "https://keimatsumotomedia.herokuapp.com",
           github:"https://bitbucket.org/erikamats/keimatsumotomedia/src"
 
@@ -55,7 +55,7 @@ class MultiCarouselPage extends Component {
           text:
             "This application incorporates Firebase to host arrival and departure data. The app retrieves and manipulates information using Moment.js  ",
           picture:
-            "https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1539715980/Screen_Shot_2018-10-16_at_1.52.37_PM.png",
+            "https://res.cloudinary.com/matsi/image/upload/v1540961645/optimized%20portfolio/wfr52vzhytebadmztse9.png",
           deployed: "https://erikamats.github.io/TrainActivity/",
           github: "https://github.com/erikamats/TrainActivity"
         },
@@ -64,7 +64,7 @@ class MultiCarouselPage extends Component {
           text:
             "  First mobile-responsive layout using media queries for a dummy portfolio using HTML, CSS, GitHub and GitHub Pages. ",
           picture:
-            "https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1537290797/portfolio/Screen_Shot_2018-09-18_at_12.12.34_PM.png",
+            "https://res.cloudinary.com/matsi/image/upload/v1540961646/optimized%20portfolio/wgiisvqirpu8ol97cjeh.png",
           deployed:
             "https://erikamats.github.io/Bootstrap-Portfolio/index.html",
           github: "https://github.com/erikamats/Responsive-Portfolio"
@@ -74,14 +74,14 @@ class MultiCarouselPage extends Component {
           text:
             " Similar to hangman, guess the baby product at play pressing on any letter of your choice! You lose the round if you exhaust all of your 5 guesses! ",
           picture:
-            " https://res.cloudinary.com/matsi/image/upload/q_auto:eco/v1537201153/portfolio/Screen_Shot_2018-09-17_at_11.18.27_AM.png",
+            " https://res.cloudinary.com/matsi/image/upload/v1540961645/optimized%20portfolio/dzbjcspdxyc0kvplxa10.png",
           deployed: " https://erikamats.github.io/Word-Guess-Name/",
           github: "https://github.com/erikamats/Word-Guess-Name"
         },
         {
           title: "Lots more is underway!",
           text: "Please come back soon to check it out!",
-          picture: "https://res.cloudinary.com/matsi/image/upload/v1540873646/portfolio/comingsoon.jpg",
+          picture: "https://res.cloudinary.com/matsi/image/upload/v1540961645/optimized%20portfolio/ss5bailbf8bnzdorwi91.jpg",
           deployed: "#",
           github:"#"
         }
