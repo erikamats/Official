@@ -292,9 +292,7 @@ a * {
 /* ----Work---- */
 
 .slides {
-  /* background-color: #596e79; */
   margin: 0vh auto;
-  /* z-index: -50; */
 
   position: relative;
   height: 100%;
@@ -311,8 +309,7 @@ a * {
 
 .card {
   float: left;
-  /* width: 100%; */
-  /* max-width:226px ; */
+
   height: 100%;
   z-index: 1000;
   margin: 0 auto;
@@ -322,13 +319,9 @@ a * {
 
 .card-col {
   margin: 2vh auto;
- 
-flex-basis:  100%;
+
+  flex-basis: 100%;
   padding: 0 12%;
-  /* float: left;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 2% 7.5%; */
 }
 
 .btn {
@@ -372,8 +365,7 @@ flex-basis:  100%;
 
 .work-text {
   color: var(--tan) !important;
-  /* text-shadow: 0.15px 0.5px var(--darkteal); */
-}
+ }
 
 /* ----Contact---- */
 
