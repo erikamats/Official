@@ -78,7 +78,7 @@ class App extends Component {
               className="menuitem"
               onClick={() =>
                 scrollToComponent(this.GIT, {
-                  offset: 1850,
+                  offset:3500,
                   align: "top",
                   duration: 2500,
                   ease: "inOutBack"
