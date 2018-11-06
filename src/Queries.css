@@ -28,12 +28,12 @@
     width: 2vw !important;
   }
 
-  .contact-container > .touch {
+  /* .contact-container > .touch {
     margin: 18vh 0 !important;
   }
   .contact-container > .touch > .merp {
     margin: 24% auto;
-  }
+  } */
 }
 
 @media (min-width: 992px) {
@@ -85,8 +85,14 @@
   .btn.btn-md {
     padding: 0.7rem 0.6rem;
   }
-
-  .contact-container {
+  .fab > .exp {
+ width: 4vh !important;
+ margin:0 1vw;
+  }
+.merp{
+  padding: 0 30vw;
+}
+  /* .contact-container {
     margin: 0vh auto 8vh;
     position: relative;
     height: 60vh;
@@ -247,7 +253,7 @@
     font-size: 2vh;
     position: absolute;
     padding: 0 11%;
-  }
+  } */
 }
 
 @media (min-width: 878px) {
@@ -310,11 +316,6 @@
     top: 11%;
   }
 
-/* .logito{
-  left:0;
-} */
- 
-  
   .about-container {
     height: 75vh;
   }
@@ -354,7 +355,8 @@
   }
 
   .exp {
-    width: 4vw !important;
+    width: 3.5vw !important;
+   
   }
 
   .contact-form {
