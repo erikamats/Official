@@ -74,10 +74,7 @@
     margin-bottom: 0;
   }
 
-  .logito {
-    margin: inherit
-  }
-
+ 
   .iAm-stack {
     width: auto;
   }
@@ -313,11 +310,11 @@
     top: 11%;
   }
 
-  .main-image {
-    object-position: 1 100%;
-    left: 0;
-  }
-
+/* .logito{
+  left:0;
+} */
+ 
+  
   .about-container {
     height: 75vh;
   }

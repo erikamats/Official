@@ -196,6 +196,7 @@ a * {
   position: absolute;
   object-fit: cover;
   overflow: hidden;
+  left:0;
 }
 
 .block {
@@ -241,18 +242,18 @@ a * {
 }
 
 .logito {
-  margin: 1% 50%;
+  margin: 1% 49%;
   bottom: 0;
   position: absolute;
   max-width: 50px;
   max-height: 50px;
   width: 20px;
-
   opacity: 0.65;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
   -webkit-transform-origin: center bottom;
   transform-origin: center bottom;
+  left:0;
 }
 
 /* ----ABout---- */
