@@ -124,7 +124,7 @@ class MultiCarouselPage extends Component {
                     <button className="btn btn-md ">
                       <a href={proj1.github} target="_blank">
                         <Fa icon="github" />
-                        <span className="d-sm  d-md">Github</span>
+                        <span className="d-sm  d-md">Source</span>
                       </a>
                     </button>
                   </CardBody>
