@@ -17,7 +17,7 @@ class MultiCarouselPage extends Component {
         {
           title: "Giphy API Request",
           text:
-            "This dynamic web pagevpopulates gifs to describe things I like and enjoy via an API call whilte using Javascript and jQuery.",
+            "This dynamic web page populates gifs to describe things I like and enjoy via an API call whilte using Javascript and jQuery.",
           picture:
             "https://res.cloudinary.com/matsi/image/upload/v1540961646/optimized%20portfolio/zoanypcrq5zaw77sxl6r.png",
           deployed: "https://erikamats.github.io/Giphy/",
