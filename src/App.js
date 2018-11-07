@@ -64,7 +64,7 @@ class App extends Component {
               className="menuitem"
               onClick={() =>
                 scrollToComponent(this.MCP, {
-                  offset: 700,
+                  offset: 800,
                   align: "top",
                   duration: 1500,
                   ease: "inOutBack"
@@ -78,8 +78,8 @@ class App extends Component {
               className="menuitem"
               onClick={() =>
                 scrollToComponent(this.GIT, {
-                  offset:3100,
-                  align: "top",
+                  offset:5300,
+                  // align: "bottom",
                   duration:2500
                   // ease: "inOutBack"
                 })
