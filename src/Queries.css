@@ -89,9 +89,11 @@
  width: 4vh !important;
  margin:0 1vw;
   }
-.merp{
-  padding: 0 30vw;
-}
+
+  .merp span{
+    display: block
+  }
+
   /* .contact-container {
     margin: 0vh auto 8vh;
     position: relative;
@@ -360,7 +362,8 @@
   }
 
   .contact-form {
-    padding: 3% 14%;
+    /* padding: 3% 14%; */
+    padding: 1% 14%;
     order: 3;
     left: 0vw;
   }

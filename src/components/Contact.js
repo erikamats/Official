@@ -92,9 +92,10 @@ class Contact extends React.Component {
           <h3 className="contact-reach">Get in Touch!</h3>
 
           <p className="merp">
-            Whether you want to say{" "}
-            <span className="hi wobble"> hi </span> or you'd like to share
-            your feedback, 
+            Whether you want to say
+            hi 
+            <span>or if you'd like to share
+            your feedback,  </span>
             <span>   I'd love to hear from you! </span>
          
           </p>
