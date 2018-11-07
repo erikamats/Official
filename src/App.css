@@ -318,6 +318,11 @@ a * {
   box-shadow: 1px 10px 20px -5px rgba(0, 0, 0, 0.22);
 }
 
+.card-col:last-child > .card > .card-body > .btn  {
+    display: none ;
+    /* background-color:red; */
+  }
+
 .card-col {
   margin: 2vh auto;
 
@@ -618,11 +623,11 @@ textarea + label {
   font-size: 3vh;
   color: var(--tan);
 }
-.wobble:hover,
+/* .wobble:hover,
 .wobble:focus {
   -webkit-animation-name: wobble 2s;
   animation-name: wobble 2s;
-}
+} */
 
 /* ----foooter---- */
 .footer-container {

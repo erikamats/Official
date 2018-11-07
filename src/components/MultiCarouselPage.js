@@ -34,7 +34,7 @@ class MultiCarouselPage extends Component {
         },
         {
           title: "keiMatsumotoMedia",
-          text: "In Progress: Full development of keiMatsumoto website/portfolio",
+          text: "In Progress: Full web development of keiMatsumotoMedia. Portfolio for young phototographer and videographer.",
           picture: "https://res.cloudinary.com/matsi/image/upload/v1540961645/optimized%20portfolio/keiMatsMedia.png",
           deployed: "https://keimatsumotomedia.herokuapp.com",
           github:"https://bitbucket.org/erikamats/keimatsumotomedia/src"
@@ -53,7 +53,7 @@ class MultiCarouselPage extends Component {
         {
           title: "Train Schedule",
           text:
-            "This application incorporates Firebase to host arrival and departure data. The app retrieves and manipulates information using Moment.js  ",
+            "This application incorporates Firebase to host arrival and departure data while manipulating information using Moment.js  ",
           picture:
             "https://res.cloudinary.com/matsi/image/upload/v1540961645/optimized%20portfolio/wfr52vzhytebadmztse9.png",
           deployed: "https://erikamats.github.io/TrainActivity/",
